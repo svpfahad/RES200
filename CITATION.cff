@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: >-
+  Knowing When to Trust a pKa Model: Conformal Prediction Intervals
+  and an Applicability Domain for XGBoost Descriptor Models
+message: >-
+  If you use this software or its results, please cite both the
+  software (this repository) and the associated paper.
+type: software
+authors:
+  - given-names: Fahad Ali
+    family-names: Atwi
+    email: s202283300@kfupm.edu.sa
+    affiliation: >-
+      Department of Chemical Engineering, King Fahd University of
+      Petroleum & Minerals, Dhahran 31261, Saudi Arabia
+    orcid: 'https://orcid.org/0009-0003-7015-9092'
+license: MIT
+repository-code: '[GitHub URL — FILL BEFORE SUBMISSION]'
+keywords:
+  - pKa prediction
+  - uncertainty quantification
+  - conformal prediction
+  - applicability domain
+  - XGBoost
+  - QSPR
+preferred-citation:
+  type: article
+  title: >-
+    Knowing When to Trust a pKa Model: Conformal Prediction Intervals
+    and an Applicability Domain for XGBoost Descriptor Models
+  authors:
+    - given-names: Fahad Ali
+      family-names: Atwi
+  journal: Journal of Undergraduate Research International
+  year: 2026

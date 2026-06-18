@@ -1,0 +1,114 @@
+================================================================================
+JURI SUBMISSION CHANGELOG
+Manuscript: "Knowing When to Trust a pKa Model: Conformal Prediction Intervals
+             and an Applicability Domain for XGBoost Descriptor Models"
+Author: Fahad Ali Atwi
+Output:  manuscript/submission/JURI_pKa_Uncertainty_AD_Atwi.docx
+Built by: scripts/build_juri_paper.py  (.venv_mac/bin/python scripts/build_juri_paper.py)
+Date: 2026-06-18
+================================================================================
+
+JURI HOUSE STYLE APPLIED (from journalssystem.com/juri Guide & Instructions
+for Authors)
+--------------------------------------------------------------------------------
+- Section order set to JURI's: Title -> Abstract -> Keywords -> Introduction
+  (with a Related work subsection) -> Materials and Methods -> Results and
+  Discussion -> Conclusions -> declarations -> References.
+- Nature citation style: numbered superscript in text, reference list in order
+  of first appearance.
+- Abstract <= 250 words (now 245) and contains NO citations (the previous draft
+  carried a reference marker in the abstract; removed).
+- Keywords: 6 (within JURI's 4-8 range).
+- Tables titled ABOVE the table ("Table 1"-"Table 5"); figures captioned BELOW
+  ("Figure 1"-"Figure 3"); figures embedded in the text, not separate.
+- Built on the official JURI template (JURI Template.docx), so page size,
+  margins, fonts (Times-equivalent), and named styles are the journal's own.
+- Length is well within the 15-page maximum (~7 pages of text + 5 tables +
+  3 figures).
+
+MAJOR STRUCTURAL CHANGES vs the previous .docx
+--------------------------------------------------------------------------------
+1. CITATIONS RE-ENGINEERED. In-text citations are now key-based and
+   auto-numbered by first appearance, and the reference list is emitted in that
+   same order. Verified: in-text numbers run sequentially 1..15, all 15
+   reference entries are cited, and there are no orphan references. (Previously
+   the reference list was not in first-citation order, which Nature style
+   requires.)
+2. ABSTRACT. Removed the in-abstract citation marker; lightly compressed to 245
+   words while preserving every key point (motivation, prior XGBoost model,
+   three conformal variants, two AD measures, the 1.6-2.2x out-of-domain error,
+   leakage-safety, openness, ~2 min on a laptop).
+3. ADDED "Related work" subsection in the Introduction, citing conformal
+   prediction in cheminformatics/drug discovery and applicability-domain
+   methods in QSAR, and stating explicitly what is new (a fully open,
+   leakage-safe reliability layer for the published XGBoost pKa model).
+4. ADDED required declaration sections that were missing:
+     - Affiliations and Author Details (JURI back-matter section: name, dept,
+       ORCID, email -- matching the layout of the original published paper)
+     - Funding (no-grant statement; institutional support cross-referenced to
+       Acknowledgements)
+     - Conflicts of Interest (none declared)
+     - Data and Code Availability (restores the Reproducibility content that
+       had been dropped from the .docx: the one-command pipeline, open-source
+       stack, and the repository link).
+   NOTE: an Author Contributions section was deliberately NOT added -- the
+   original published JURI paper has none, and a CRediT block is redundant for a
+   single-author paper.
+5. Split the combined discussion into "Interpretation" and "Limitations and
+   future work" subsections under Results and Discussion, matching how JURI
+   sample papers structure this.
+6. AUTHOR DETAILS IMPORTED from the original published paper
+   (JURI-00032-2025, "to be verified.pdf"):
+     - Affiliation corrected to Department of CHEMICAL ENGINEERING (was
+       Chemistry), KFUPM, Dhahran 31261.
+     - ORCID 0009-0003-7015-9092 added.
+     - Corresponding email set to the institutional s202283300@kfupm.edu.sa
+       (as published) rather than a personal address.
+     - Single-author byline confirmed (Al-Khater credited as mentor in
+       Acknowledgements, not as co-author, per your instruction).
+7. REFERENCES aligned to JURI house style observed in the published paper:
+   parenthesized numbering "(1)", abbreviated journal titles, and matching
+   formatting (e.g., Chen & Guestrin, Landrum/RDKit). Acknowledgements wording
+   adapted from the published paper's own acknowledgement.
+
+WORDING / STYLE ADJUSTMENTS (undergraduate-reader polish)
+--------------------------------------------------------------------------------
+- Defined abbreviations at first use: pKa, R2, RMSE, MAE, QSPR, AD, kNN, CQR,
+  SI-style percentages.
+- Added one plain-language explanatory sentence to conformal prediction and to
+  each method (split / normalized / CQR / kNN AD / Tanimoto AD).
+- Tense and phrasing made consistent; long sentences broken up.
+- All numbers cross-checked against sota_pka/paper_assets/uq/RESULTS_uq.md and
+  DRAFT_manuscript.md (Tables 1-5, coverage %, MAE ratios, descriptor and
+  sample counts, "~2 minutes on a laptop CPU") -- no discrepancies.
+
+REPOSITORY FILES GENERATED (so Data & Code Availability is truthful)
+--------------------------------------------------------------------------------
+- LICENSE          (MIT, (c) 2026 Fahad Ali Atwi) at repo root
+- CITATION.cff     at repo root (software + preferred paper citation)
+- The package README (sota_pka/uq/README.md) and runnable package
+  (sota_pka/uq/, with cli.py / conformal.py / applicability.py / evaluate_uq.py
+  and tests) already exist and match the paper's reproducibility claim.
+
+================================================================================
+ACTION REQUIRED FROM YOU BEFORE SUBMISSION  (only 2 items remain)
+================================================================================
+1. GITHUB URL (only true blocker). Replace the placeholder
+   "[GitHub URL - FILL BEFORE SUBMISSION]" in TWO places:
+     - the Data and Code Availability section of the .docx
+     - CITATION.cff (repository-code:)
+   Then re-run: .venv_mac/bin/python scripts/build_juri_paper.py
+   (Edit REPO_URL at the top of scripts/build_juri_paper.py first.)
+
+2. PRIOR-PAPER DOI (reference 1, Atwi & Al-Khater). The self-citation currently
+   reads "J. Undergrad. Res. Int. (2026)". Add the final volume/issue/pages/DOI
+   of the original JURI XGBoost paper (JURI-00032-2025) once the published
+   citation string is available. (Not a desk-reject risk if left as-is, but
+   worth completing.)
+
+RESOLVED (imported from the published paper, no action needed):
+   - Single-author byline (Al-Khater credited as mentor, not co-author).
+   - Affiliation: Department of Chemical Engineering, KFUPM, Dhahran 31261.
+   - ORCID 0009-0003-7015-9092; corresponding email s202283300@kfupm.edu.sa.
+   - Funding statement and Acknowledgements wording (institutional support).
+================================================================================
