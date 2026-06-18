@@ -1,0 +1,1 @@
+2.523*tanh(319.2*(-6.072*rc_decay_q + 0.09244*rc_estate_r1_sum + 2.475*rc_q_r1_min - 5.397*rc_q_center - 1.89)*exp(-0.2279*rc_estate_r2_sum)) + 7.633

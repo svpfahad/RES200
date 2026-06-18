@@ -1,0 +1,34 @@
+{
+  "label": "acidic_aniline",
+  "engine": "pysr",
+  "selected_features": [
+    "PEOE_VSA11",
+    "AATSC5se",
+    "FilterItLogS",
+    "GATS2Z",
+    "MinAbsEStateIndex",
+    "BCUT2D_LOGPLOW",
+    "FpDensityMorgan1",
+    "AETA_eta",
+    "SMR_VSA4",
+    "BCUT2D_MRLOW",
+    "RotRatio",
+    "GATS5d"
+  ],
+  "complexity": 9,
+  "loss": 4.9369793,
+  "formula": "(tanh(square(MinAbsEStateIndex) / BCUT2D_MRLOW) * 4.9158835) + 7.9629107",
+  "train_metrics": {
+    "n": 163,
+    "r2": 0.3584489139946607,
+    "rmse": 2.2219314803101415,
+    "mae": 1.7433005101581442
+  },
+  "test_metrics": {
+    "n": 48,
+    "r2": -0.025376392296981187,
+    "rmse": 3.2383113933554752,
+    "mae": 2.498000113854687
+  },
+  "oracle_best_on_test_r2": 0.09634391293526823
+}

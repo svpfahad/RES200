@@ -1,0 +1,6 @@
+external_set,task,n_external_unique,overlap_train_canonical,overlap_train_connectivity,overlap_test_canonical,pct_train_canonical
+novartis_acidic,acidic,112,0,0,0,0.0
+AvLiLuMoVe_123_acidic,acidic,26,0,3,0,0.0
+SAMPL7_acidic,acidic,20,0,0,0,0.0
+novartis_basic,basic,168,0,0,0,0.0
+AvLiLuMoVe_123_basic,basic,97,2,10,0,2.06

@@ -1,0 +1,34 @@
+{
+  "label": "basic_sec_amine",
+  "engine": "pysr",
+  "selected_features": [
+    "AATSC3Z",
+    "MATS4s",
+    "BCUT2D_LOGPLOW",
+    "BCUTc-1l",
+    "AATS3dv",
+    "ATSC1m",
+    "ATSC4s",
+    "MATS1s",
+    "ATSC3Z",
+    "AATS1dv",
+    "PEOE_VSA8",
+    "VSA_EState5"
+  ],
+  "complexity": 20,
+  "loss": 1.0488073,
+  "formula": "((9.083374 + tanh(AATSC3Z + ((BCUT2D_LOGPLOW + 1.9595512) / -0.08603356))) - tanh(VSA_EState5)) + tanh((BCUT2D_LOGPLOW + AATS1dv) / -0.0108877225)",
+  "train_metrics": {
+    "n": 181,
+    "r2": 0.5207315813296595,
+    "rmse": 1.0241128626789782,
+    "mae": 0.7974438987702285
+  },
+  "test_metrics": {
+    "n": 55,
+    "r2": 0.5711706203246136,
+    "rmse": 1.3299953572566325,
+    "mae": 0.9026209004629477
+  },
+  "oracle_best_on_test_r2": 0.6379863937346656
+}

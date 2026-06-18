@@ -1,0 +1,23 @@
+{
+  "best_model": "random_forest",
+  "metrics": {
+    "r2": 0.9441313685138837,
+    "mae": 0.15664973873064433,
+    "rmse": 0.2884924396499776,
+    "interval_coverage": 0.9138755980861244,
+    "mean_interval_width": 0.8394378408889933,
+    "test_rows": 2717.0
+  },
+  "calibration_qhat": 0.41971892044449666,
+  "target": "ln_co2_solubility",
+  "group": null,
+  "features": [
+    "temperature_k",
+    "pressure_bar",
+    "cation_code",
+    "anion_code",
+    "ln_pressure_bar",
+    "cation_smiles",
+    "anion_smiles"
+  ]
+}

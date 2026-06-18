@@ -1,0 +1,2 @@
+best_params,Train_R2,Test_R2,Test_MAE,Test_MSE,Test_RMSE
+"{'colsample_bytree': 0.8, 'learning_rate': 0.1, 'max_depth': 6, 'n_estimators': 300, 'reg_lambda': 5, 'subsample': 0.8}",0.8496967444617208,0.1594827792991016,2.3851572971902453,9.715144971813842,3.116912730862679

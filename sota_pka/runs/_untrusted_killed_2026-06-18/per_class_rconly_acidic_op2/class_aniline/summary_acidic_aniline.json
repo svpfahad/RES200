@@ -1,0 +1,71 @@
+{
+  "label": "acidic_aniline",
+  "mode": "direct",
+  "criterion": "bic",
+  "max_complexity": 20,
+  "corr_threshold": 0.95,
+  "n_features_pruned_pool": 26,
+  "chosen_top_k": 8,
+  "selected_features": [
+    "rc_decay_en",
+    "rc_decay_q",
+    "rc_estate_r2_sum",
+    "rc_q_r3_sum",
+    "rc_estate_r1_sum",
+    "rc_q_r2_mean",
+    "rc_q_r1_min",
+    "rc_q_center"
+  ],
+  "edge_count": 11,
+  "sympy_ops": 14,
+  "formula": "2.523*tanh(319.2*(-6.072*rc_decay_q + 0.09244*rc_estate_r1_sum + 2.475*rc_q_r1_min - 5.397*rc_q_center - 1.89)*exp(-0.2279*rc_estate_r2_sum)) + 7.633",
+  "cv_selection": [
+    {
+      "top_k": 4,
+      "cv_r2_mean": 0.42226432524875746,
+      "cv_r2_std": 0.08777725268892082,
+      "folds": [
+        0.4939796285977063,
+        0.5213508842133028,
+        0.3116491583142432,
+        0.36207762986977754
+      ]
+    },
+    {
+      "top_k": 6,
+      "cv_r2_mean": 0.4477103283884311,
+      "cv_r2_std": 0.12859228121885113,
+      "folds": [
+        0.5563531433567308,
+        0.5695937705153067,
+        0.25209209159567547,
+        0.4128023080860115
+      ]
+    },
+    {
+      "top_k": 8,
+      "cv_r2_mean": 0.5013680962466298,
+      "cv_r2_std": 0.09548089112370453,
+      "folds": [
+        0.5667984189416981,
+        0.6157881220312718,
+        0.3732312815916383,
+        0.44965456242191115
+      ]
+    }
+  ],
+  "cv_best_mean_r2": 0.5013680962466298,
+  "train_metrics": {
+    "n": 163,
+    "r2": 0.6382269554921034,
+    "rmse": 1.6685266289651024,
+    "mae": 1.2083313376032554
+  },
+  "test_metrics": {
+    "n": 48,
+    "r2": 0.1926441741203334,
+    "rmse": 2.873488361441791,
+    "mae": 1.8190122189687372
+  },
+  "elapsed_sec": 235.2
+}

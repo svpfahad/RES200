@@ -1,0 +1,1 @@
+-3.025*(-0.1046*GATS1s - 1.72)*exp(-2.0*(-1.835*MinAbsPartialCharge - 0.2201)**2*(-0.4319*BCUT2D_MRLOW + sqrt(1.158*BCUT2D_MRLOW - 0.4882) + 0.3449)**2 - 2.0*exp(-4.0*(2.889 - 5.94*MaxAbsPartialCharge)**2*(0.2642*PEOE_VSA13 + 5.623)**2 - 4.0*(10.83*MinAbsPartialCharge - 3.507)**2)) + 3.369

@@ -1,0 +1,1 @@
+12.89*(6.683*BCUTc-1h - 4.149)*(-0.5793*MinAbsPartialCharge - 0.2727 + exp(-2.0*(3.707*BCUTc-1h - 2.576)**2*(10.08*MinPartialCharge + 3.647)**2)) + 2.45

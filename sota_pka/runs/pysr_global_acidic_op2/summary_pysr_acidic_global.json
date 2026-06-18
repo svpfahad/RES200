@@ -1,0 +1,34 @@
+{
+  "label": "acidic_global",
+  "engine": "pysr",
+  "selected_features": [
+    "SlogP_VSA2",
+    "BCUTc-1l",
+    "BCUTc-1h",
+    "PEOE_VSA13",
+    "MDEN-13",
+    "ATSC7Z",
+    "ATSC3c",
+    "AATSC2se",
+    "BCUT2D_MRLOW",
+    "MinAbsPartialCharge",
+    "MINtN",
+    "MATS4v"
+  ],
+  "complexity": 3,
+  "loss": 8.743136,
+  "formula": "2.9682772 / BCUTc-1h",
+  "train_metrics": {
+    "n": 2321,
+    "r2": 0.23454808614285627,
+    "rmse": 2.9568797960973594,
+    "mae": 2.514274747315236
+  },
+  "test_metrics": {
+    "n": 774,
+    "r2": 0.2058050255374999,
+    "rmse": 3.013850036684296,
+    "mae": 2.551724353580123
+  },
+  "oracle_best_on_test_r2": 0.3925770827686953
+}

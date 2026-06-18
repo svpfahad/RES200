@@ -1,0 +1,38 @@
+
+=== acidic rep0 fold0: train=1834 val=459 ===
+  -> outer R²=0.4238 k=8 (711.9s)
+
+=== acidic rep0 fold1: train=1834 val=459 ===
+  -> outer R²=0.4835 k=12 (716.1s)
+
+=== acidic rep0 fold2: train=1834 val=459 ===
+  -> outer R²=0.4506 k=8 (679.4s)
+
+=== acidic rep0 fold3: train=1835 val=458 ===
+  -> outer R²=0.4850 k=8 (687.4s)
+
+=== acidic rep0 fold4: train=1835 val=458 ===
+  -> outer R²=0.5124 k=8 (720.0s)
+
+=== basic rep0 fold0: train=2021 val=506 ===
+  -> outer R²=0.4091 k=20 (795.0s)
+
+=== basic rep0 fold1: train=2021 val=506 ===
+  -> outer R²=0.4473 k=20 (805.6s)
+
+=== basic rep0 fold2: train=2022 val=505 ===
+  -> outer R²=0.3633 k=12 (762.3s)
+
+=== basic rep0 fold3: train=2022 val=505 ===
+  -> outer R²=0.4861 k=20 (812.5s)
+
+=== basic rep0 fold4: train=2022 val=505 ===
+  -> outer R²=0.3918 k=8 (922.9s)
+
+# E8 — Repeated nested-CV uncertainty band on symbolic R²
+
+| task | folds | nested R² mean | std | 95% band (mean ± 1.96·SE) | recorded single-test R² | chosen_k (mode) |
+|---|---:|---:|---:|---|---:|---:|
+| acidic | 5 | 0.471 | 0.034 | [0.441, 0.501] | 0.448 | 8 |
+| basic | 5 | 0.420 | 0.048 | [0.377, 0.462] | 0.470 | 20 |
+

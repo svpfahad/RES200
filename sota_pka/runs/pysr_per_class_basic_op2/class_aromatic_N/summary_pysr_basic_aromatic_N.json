@@ -1,0 +1,34 @@
+{
+  "label": "basic_aromatic_N",
+  "engine": "pysr",
+  "selected_features": [
+    "BCUTc-1h",
+    "MINaaCH",
+    "MaxPartialCharge",
+    "MATS1se",
+    "MinPartialCharge",
+    "RPCG",
+    "BCUTs-1h",
+    "SMR_VSA3",
+    "AATSC4pe",
+    "GATS1pe",
+    "NaaN",
+    "ATSC1c"
+  ],
+  "complexity": 6,
+  "loss": 5.1290746,
+  "formula": "cube(1.4483776 - (MaxPartialCharge + MinPartialCharge))",
+  "train_metrics": {
+    "n": 858,
+    "r2": 0.3011737017859688,
+    "rmse": 2.26474608349249,
+    "mae": 1.766536574355096
+  },
+  "test_metrics": {
+    "n": 280,
+    "r2": 0.3606651876424902,
+    "rmse": 2.365718198860685,
+    "mae": 1.8522275136835031
+  },
+  "oracle_best_on_test_r2": 0.46797824696741974
+}

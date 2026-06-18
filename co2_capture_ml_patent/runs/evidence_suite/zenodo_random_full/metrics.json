@@ -1,0 +1,24 @@
+{
+  "run": "zenodo_random_full",
+  "note": "Random row split; useful as a leakage-sensitive upper-bound baseline.",
+  "target": "ln_co2_solubility",
+  "group": null,
+  "excluded_columns": [],
+  "best_model": "random_forest",
+  "metrics": {
+    "r2": 0.940201181127129,
+    "mae": 0.16364602503173603,
+    "rmse": 0.29846727649505644,
+    "interval_coverage": 0.9146117040853883,
+    "mean_interval_width": 0.8979541188591782,
+    "test_rows": 2717.0
+  },
+  "calibration_qhat": 0.448977059429589,
+  "features": [
+    "temperature_k",
+    "pressure_bar",
+    "cation_code",
+    "anion_code",
+    "ln_pressure_bar"
+  ]
+}

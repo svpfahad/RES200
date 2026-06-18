@@ -1,0 +1,2042 @@
+
+===== PySR PER-CLASS acidic =====
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/julia_import.py:27: UserWarning: PYTHON_JULIACALL_THREADS environment variable is set to something other than 'auto', so PySR was not able to set it. You may wish to set it to `'auto'` for full use of your CPU.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(10)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(8)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(15)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(11)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(11)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(4)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(4)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(9)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(6)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(12)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(3)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(3)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(2)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(2)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(7)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(7)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(5)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(23)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(19)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(22)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(31)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(85)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(112)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(105)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(105)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(100)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(106)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(113)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(109)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(107)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(103)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(102)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+  per-class overall R2=0.4980 RMSE=2.3962 (class-mean 0.3873)
+
+===== PySR GLOBAL acidic =====
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+  global R2=0.2058 RMSE=3.0139 complexity=3 (oracle 0.399201855186314)
+
+===== PySR PER-CLASS basic =====
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(102)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(124)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(127)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(115)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(115)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(119)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(117)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(117)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(118)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(116)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(123)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(123)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(122)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(114)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(128)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(142)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+  per-class overall R2=-1.8676 RMSE=5.5000 (class-mean 0.2828)
+
+===== PySR GLOBAL basic =====
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/pysr/sr.py:1873: UserWarning: Note: Setting `random_state` without also setting `deterministic=True` and `parallelism='serial'` will result in non-deterministic searches.
+  warnings.warn(
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(142)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(146)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(169)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(191)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(246)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(245)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(247)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(247)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(241)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(243)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(240)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(250)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(251)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(257)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(258)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(267)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+  global R2=0.2185 RMSE=2.8712 complexity=3 (oracle 0.3956169648372946)
+
+done
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(263)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(256)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(266)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(260)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(262)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(255)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976
+UNHANDLED TASK ERROR: Distributed.ProcessExitedException(259)
+Stacktrace:
+  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+    @ Base ./task.jl:1157
+  [2] wait()
+    @ Base ./task.jl:1229
+  [3] wait(c::Base.GenericCondition{ReentrantLock}; first::Bool)
+    @ Base ./condition.jl:141
+  [4] wait
+    @ ./condition.jl:136 [inlined]
+  [5] take_buffered(c::Channel{Any})
+    @ Base ./channels.jl:532
+  [6] take!(c::Channel{Any})
+    @ Base ./channels.jl:526
+  [7] take!(::Distributed.RemoteValue)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:726
+  [8] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID; kwargs::@Kwargs{})
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:461
+  [9] remotecall_fetch(f::Function, w::Distributed.Worker, args::Distributed.RRID)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:454
+ [10] remotecall_fetch
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:492 [inlined]
+ [11] call_on_owner
+    @ ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:565 [inlined]
+ [12] fetch(r::Distributed.Future)
+    @ Distributed ~/Downloads/RES200/.venv_mac/julia_env/pyjuliapkg/install/share/julia/stdlib/v1.12/Distributed/src/remotecall.jl:619
+ [13] (::SymbolicRegression.var"#_main_search_loop!##8#_main_search_loop!##9"{SymbolicRegression.SearchUtilsModule.SearchState{Float32, Float32, Expression{Float32, Node{Float32}, @NamedTuple{operators::Nothing, variable_names::Nothing}}, Distributed.Future, Distributed.RemoteChannel}, Int64, Int64})()
+    @ SymbolicRegression ~/.julia/packages/SymbolicRegression/L5TJa/src/SymbolicRegression.jl:976

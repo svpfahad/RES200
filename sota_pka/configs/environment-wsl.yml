@@ -1,0 +1,35 @@
+name: sota-pka
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - rdkit
+  - mordred
+  - xgboost
+  - lightgbm
+  - catboost
+  - optuna
+  - shap
+  - pytorch
+  - pytorch-cuda=12.4
+  - pyg
+  - networkx
+  - pyyaml
+  - joblib
+  - pip:
+      - feyn
+      - chemprop
+      - datasets
+      - molvs
+      - tdc

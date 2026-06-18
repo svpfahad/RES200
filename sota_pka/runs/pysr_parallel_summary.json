@@ -1,0 +1,148 @@
+[
+  {
+    "task": "acidic",
+    "engine": "pysr_parallel",
+    "overall_test_metrics": {
+      "n": 774,
+      "r2": 0.5265902562318137,
+      "rmse": 2.326894364335453,
+      "mae": 1.6119895424961723
+    },
+    "global_test_r2": 0.2058050255374999,
+    "per_class": [
+      {
+        "class": "thiol",
+        "n_test": 19,
+        "test_r2": 0.6718501914506936,
+        "test_rmse": 1.8473043835165792,
+        "complexity": 14,
+        "formula": "(419.16458 / AATS2m) + (tanh((0.14787012 / (BCUT2D_MRLOW + 0.3108249)) + BCUT2D_MRLOW) / 0.35673082)"
+      },
+      {
+        "class": "imidazole_like",
+        "n_test": 23,
+        "test_r2": -0.4085445721887342,
+        "test_rmse": 2.200836486672834,
+        "complexity": 24,
+        "formula": "(((ATSC2c + 1.198694) / square(BCUTc-1h)) - (((ATSC2c / square(GATS3s)) + tanh((BCUTc-1h - 1.7099342) + AATSC0i)) / (MinPartialCharge / -1.7069719))) - -5.6090326"
+      },
+      {
+        "class": "aniline",
+        "n_test": 48,
+        "test_r2": -0.025376392296981187,
+        "test_rmse": 3.2383113933554752,
+        "complexity": 9,
+        "formula": "(tanh(square(MinAbsEStateIndex) / BCUT2D_MRLOW) * 4.9158835) + 7.9629107"
+      },
+      {
+        "class": "aromatic_N",
+        "n_test": 96,
+        "test_r2": 0.3811305328928897,
+        "test_rmse": 2.7441763495553855,
+        "complexity": 24,
+        "formula": "(cube(MATS2se + ((JGI4 * 25.056553) + -0.9444348)) + IC2) + ((GATS1s - MATS2se) * cube(1.8725326 / ((BCUTc-1h * GATS1s) + square(ETA_epsilon_5))))"
+      },
+      {
+        "class": "other",
+        "n_test": 138,
+        "test_r2": 0.07590922424234448,
+        "test_rmse": 3.365451627214661,
+        "complexity": 3,
+        "formula": "3.1396294 / BCUTc-1h"
+      },
+      {
+        "class": "phenol",
+        "n_test": 197,
+        "test_r2": 0.4808334106510048,
+        "test_rmse": 1.9394128875809233,
+        "complexity": 4,
+        "formula": "1.4311334 / square(BCUTc-1h)"
+      },
+      {
+        "class": "carboxylic_acid",
+        "n_test": 221,
+        "test_r2": 0.3761686748631221,
+        "test_rmse": 0.7484550287349675,
+        "complexity": 6,
+        "formula": "BCUT2D_MRLOW + (0.41341224 / square(MinAbsPartialCharge))"
+      }
+    ]
+  },
+  {
+    "task": "basic",
+    "engine": "pysr_parallel",
+    "overall_test_metrics": {
+      "n": 843,
+      "r2": 0.46515834469711237,
+      "rmse": 2.3752649659646123,
+      "mae": 1.6603490200386712
+    },
+    "global_test_r2": 0.2184925169661649,
+    "per_class": [
+      {
+        "class": "aniline",
+        "n_test": 113,
+        "test_r2": 0.26984698535167106,
+        "test_rmse": 2.539776214707171,
+        "complexity": 3,
+        "formula": "MinPartialCharge / -0.095342934"
+      },
+      {
+        "class": "tert_amine",
+        "n_test": 142,
+        "test_r2": 0.41143120630456065,
+        "test_rmse": 1.4005653217790959,
+        "complexity": 7,
+        "formula": "(RNCG * (PEOE_VSA7 / 6.264322)) + 7.002552"
+      },
+      {
+        "class": "prim_amine",
+        "n_test": 64,
+        "test_r2": 0.27160683691695686,
+        "test_rmse": 0.9742441925842722,
+        "complexity": 9,
+        "formula": "GATS2v + (((ATSC1c - MATS3c) / MaxAbsPartialCharge) + 8.880138)"
+      },
+      {
+        "class": "sec_amine",
+        "n_test": 55,
+        "test_r2": 0.5711706203246136,
+        "test_rmse": 1.3299953572566325,
+        "complexity": 20,
+        "formula": "((9.083374 + tanh(AATSC3Z + ((BCUT2D_LOGPLOW + 1.9595512) / -0.08603356))) - tanh(VSA_EState5)) + tanh((BCUT2D_LOGPLOW + AATS1dv) / -0.0108877225)"
+      },
+      {
+        "class": "aromatic_N",
+        "n_test": 280,
+        "test_r2": 0.3606651876424902,
+        "test_rmse": 2.365718198860685,
+        "complexity": 6,
+        "formula": "cube(1.4483776 - (MaxPartialCharge + MinPartialCharge))"
+      },
+      {
+        "class": "other",
+        "n_test": 51,
+        "test_r2": -0.27947386440943944,
+        "test_rmse": 4.763847357545645,
+        "complexity": 5,
+        "formula": "square(2.2375543 - cube(MATS4s))"
+      },
+      {
+        "class": "imidazole_like",
+        "n_test": 50,
+        "test_r2": 0.3234006434624801,
+        "test_rmse": 1.5792294863336171,
+        "complexity": 16,
+        "formula": "square(square(BCUTc-1h) * (cube(GATS1c * (AATS1p - 1.0872015)) - ((19.447342 / BCUTc-1h) - 32.06538)))"
+      },
+      {
+        "class": "phenol",
+        "n_test": 46,
+        "test_r2": 0.46955509514670624,
+        "test_rmse": 1.7520139283716722,
+        "complexity": 8,
+        "formula": "square(((AATS2Z * -0.19414379) - -8.904441) * MinPartialCharge)"
+      }
+    ]
+  }
+]

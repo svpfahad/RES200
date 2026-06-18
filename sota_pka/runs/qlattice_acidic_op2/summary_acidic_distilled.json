@@ -1,0 +1,78 @@
+{
+  "label": "acidic_distilled",
+  "mode": "distilled",
+  "criterion": "bic",
+  "max_complexity": 30,
+  "corr_threshold": 0.95,
+  "n_features_pruned_pool": 604,
+  "chosen_top_k": 8,
+  "selected_features": [
+    "MaxAbsPartialCharge",
+    "MinAbsPartialCharge",
+    "BCUT2D_MRLOW",
+    "SlogP_VSA2",
+    "PEOE_VSA13",
+    "ATSC7Z",
+    "MinAbsEStateIndex",
+    "GATS1s"
+  ],
+  "edge_count": 14,
+  "sympy_ops": 39,
+  "formula": "-3.025*(-0.1046*GATS1s - 1.72)*exp(-2.0*(-1.835*MinAbsPartialCharge - 0.2201)**2*(-0.4319*BCUT2D_MRLOW + sqrt(1.158*BCUT2D_MRLOW - 0.4882) + 0.3449)**2 - 2.0*exp(-4.0*(2.889 - 5.94*MaxAbsPartialCharge)**2*(0.2642*PEOE_VSA13 + 5.623)**2 - 4.0*(10.83*MinAbsPartialCharge - 3.507)**2)) + 3.369",
+  "cv_selection": [
+    {
+      "top_k": 8,
+      "cv_r2_mean": 0.382943009543089,
+      "cv_r2_std": 0.027460724079500218,
+      "folds": [
+        0.36342507503215693,
+        0.34882451882407217,
+        0.4138177746131131,
+        0.4057046697030141
+      ]
+    },
+    {
+      "top_k": 12,
+      "cv_r2_mean": 0.3630415502845037,
+      "cv_r2_std": 0.01745596699270348,
+      "folds": [
+        0.34726155169796813,
+        0.3448814902929319,
+        0.3856721101215793,
+        0.3743510490255356
+      ]
+    },
+    {
+      "top_k": 20,
+      "cv_r2_mean": 0.37038044276485893,
+      "cv_r2_std": 0.03148127009571137,
+      "folds": [
+        0.345866318695236,
+        0.33399816098714985,
+        0.41045887513910273,
+        0.39119841623794704
+      ]
+    }
+  ],
+  "cv_best_mean_r2": 0.382943009543089,
+  "train_metrics": {
+    "n": 2293,
+    "r2": 0.37891641838955736,
+    "rmse": 2.6690980248000247,
+    "mae": 1.9768782695873406
+  },
+  "test_metrics": {
+    "n": 765,
+    "r2": 0.34983490010305673,
+    "rmse": 2.7339730456623994,
+    "mae": 2.0366412549098056
+  },
+  "elapsed_sec": 659.8,
+  "teacher_test_metrics": {
+    "n": 765,
+    "r2": 0.7558436465273958,
+    "rmse": 1.6753919209636663,
+    "mae": 1.1015413848449576
+  },
+  "distill_fidelity_r2_test": 0.4996744828303369
+}

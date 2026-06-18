@@ -1,0 +1,1 @@
+8.092 - 3.142*tanh(log(12.73*rc_decay_q + 27.86*rc_q_center + 10.01))

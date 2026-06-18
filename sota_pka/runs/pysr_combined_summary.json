@@ -1,0 +1,331 @@
+[
+  {
+    "task": "acidic",
+    "per_class": {
+      "task": "acidic",
+      "engine": "pysr",
+      "overall_test_metrics": {
+        "n": 774,
+        "r2": 0.4979502705518587,
+        "rmse": 2.396246217008855,
+        "mae": 1.647514810959363
+      },
+      "class_mean_baseline_test": {
+        "n": 774,
+        "r2": 0.38730716278679445,
+        "rmse": 2.647155619772916,
+        "mae": 1.9524759240872027
+      },
+      "major_classes": [
+        "carboxylic_acid",
+        "phenol",
+        "other",
+        "aromatic_N",
+        "aniline",
+        "imidazole_like",
+        "thiol"
+      ],
+      "per_class": [
+        {
+          "class": "carboxylic_acid",
+          "n_train": 680,
+          "n_test": 221,
+          "test_r2": 0.376171435931157,
+          "test_rmse": 0.7484533724078013,
+          "test_mae": 0.5385359147545753,
+          "complexity": 6,
+          "formula": "square(0.6429641 / MinAbsPartialCharge) + BCUT2D_MRLOW",
+          "oracle_r2": 0.4792964490112678,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "phenol",
+          "n_train": 560,
+          "n_test": 197,
+          "test_r2": 0.4808285749428701,
+          "test_rmse": 1.9394219197615672,
+          "test_mae": 1.4008402803172368,
+          "complexity": 4,
+          "formula": "square(1.1963147 / BCUTc-1h)",
+          "oracle_r2": 0.5390885252397721,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "other",
+          "n_train": 397,
+          "n_test": 138,
+          "test_r2": 0.0759068390609503,
+          "test_rmse": 3.365455970514927,
+          "test_mae": 2.7340220240696977,
+          "complexity": 3,
+          "formula": "3.1398191 / BCUTc-1h",
+          "oracle_r2": 0.17824738268818896,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "aromatic_N",
+          "n_train": 260,
+          "n_test": 96,
+          "test_r2": 0.2584646414984756,
+          "test_rmse": 3.003851237488359,
+          "test_mae": 2.3587621744136436,
+          "complexity": 4,
+          "formula": "cube(1.64188 / ETA_epsilon_5)",
+          "oracle_r2": 0.40200657228294834,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "aniline",
+          "n_train": 163,
+          "n_test": 48,
+          "test_r2": -0.11895021350840995,
+          "test_rmse": 3.3828468173747366,
+          "test_mae": 2.5234793192699887,
+          "complexity": 13,
+          "formula": "(MinAbsEStateIndex / BCUT2D_MRLOW) + (((PEOE_VSA11 + 4.4941545) * (AETA_eta - GATS2Z)) + 9.401169)",
+          "oracle_r2": 0.23013099303192786,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "imidazole_like",
+          "n_train": 84,
+          "n_test": 23,
+          "test_r2": -0.9871956961274155,
+          "test_rmse": 2.614103623889346,
+          "test_mae": 1.7146010140668493,
+          "complexity": 17,
+          "formula": "tanh(-1.0586104 / (AATSC0i - 1.7627901)) + (1.7120037 * (8.926402 - square(MinPartialCharge - (BCUTc-1h * -4.913504))))",
+          "oracle_r2": 0.39745815496711023,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "thiol",
+          "n_train": 79,
+          "n_test": 19,
+          "test_r2": 0.5781714805860856,
+          "test_rmse": 2.0944517140271883,
+          "test_mae": 1.698114585534213,
+          "complexity": 11,
+          "formula": "(tanh(BCUT2D_MRLOW + square(ATSC4pe)) + (115.10691 / AATS2m)) * 3.2906265",
+          "oracle_r2": 0.6540266027940644,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "<rare:global_fallback>",
+          "n_train": 2321,
+          "n_test": 32,
+          "test_r2": 0.25311370787245346,
+          "complexity": 3,
+          "formula": "2.9682062 / BCUTc-1h",
+          "source": "global_fallback"
+        }
+      ],
+      "n_test_total": 774
+    },
+    "global": {
+      "label": "acidic_global",
+      "engine": "pysr",
+      "selected_features": [
+        "SlogP_VSA2",
+        "BCUTc-1l",
+        "BCUTc-1h",
+        "PEOE_VSA13",
+        "MDEN-13",
+        "ATSC7Z",
+        "ATSC3c",
+        "AATSC2se",
+        "BCUT2D_MRLOW",
+        "MinAbsPartialCharge",
+        "MINtN",
+        "MATS4v"
+      ],
+      "complexity": 3,
+      "loss": 8.743136,
+      "formula": "2.9682066 / BCUTc-1h",
+      "train_metrics": {
+        "n": 2321,
+        "r2": 0.2345480882808455,
+        "rmse": 2.956879791967918,
+        "mae": 2.514281241297243
+      },
+      "test_metrics": {
+        "n": 774,
+        "r2": 0.20580421781982727,
+        "rmse": 3.013851569267224,
+        "mae": 2.5517319602840582
+      },
+      "oracle_best_on_test_r2": 0.399201855186314
+    }
+  },
+  {
+    "task": "basic",
+    "per_class": {
+      "task": "basic",
+      "engine": "pysr",
+      "overall_test_metrics": {
+        "n": 843,
+        "r2": -1.8676248621604263,
+        "rmse": 5.499973785845915,
+        "mae": 1.7902128668422195
+      },
+      "class_mean_baseline_test": {
+        "n": 843,
+        "r2": 0.28283145417072564,
+        "rmse": 2.75048998444257,
+        "mae": 2.05440366007144
+      },
+      "major_classes": [
+        "aromatic_N",
+        "tert_amine",
+        "aniline",
+        "prim_amine",
+        "sec_amine",
+        "other",
+        "imidazole_like",
+        "phenol"
+      ],
+      "per_class": [
+        {
+          "class": "aromatic_N",
+          "n_train": 858,
+          "n_test": 280,
+          "test_r2": 0.3663610709150472,
+          "test_rmse": 2.355156439180675,
+          "test_mae": 1.8928284839790155,
+          "complexity": 7,
+          "formula": "(GATS1pe + (MinPartialCharge / -0.32456082)) / BCUTc-1h",
+          "oracle_r2": 0.4808524187465103,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "tert_amine",
+          "n_train": 443,
+          "n_test": 142,
+          "test_r2": 0.5093941788607876,
+          "test_rmse": 1.2787071733073059,
+          "test_mae": 0.8880384896861957,
+          "complexity": 19,
+          "formula": "(((RNCG * (MATS1s + (PEOE_VSA7 * -0.027335975))) + tanh(GATS1c)) * -5.3548203) + (21.88868 - (tanh(AATSC0i) * 11.983478))",
+          "oracle_r2": 0.5443027350726437,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "aniline",
+          "n_train": 304,
+          "n_test": 113,
+          "test_r2": 0.47082368747187253,
+          "test_rmse": 2.162164378805602,
+          "test_mae": 1.5547329397589098,
+          "complexity": 13,
+          "formula": "((BCUTc-1h * (3.0334632 / MinPartialCharge)) + ((ATS2s * 0.008116073) + 3.7322469)) * BCUT2D_LOGPHI",
+          "oracle_r2": 0.47082368747187253,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "prim_amine",
+          "n_train": 184,
+          "n_test": 64,
+          "test_r2": 0.2331224579704222,
+          "test_rmse": 0.9996498499528498,
+          "test_mae": 0.643996869352381,
+          "complexity": 17,
+          "formula": "(GATS2v + (AATSC4Z * (SlogP_VSA4 * 0.0313715))) + (((ATSC1c + MaxAbsPartialCharge) - -2.0219173) * (3.7978687 - MATS3c))",
+          "oracle_r2": 0.41873310047168977,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "sec_amine",
+          "n_train": 181,
+          "n_test": 55,
+          "test_r2": 0.5301369760908203,
+          "test_rmse": 1.3921739199350054,
+          "test_mae": 1.026209280838579,
+          "complexity": 24,
+          "formula": "(3.6491213 - tanh(cube((cube(BCUT2D_LOGPLOW / AATS1dv) + square(AATSC3Z * 0.38708523)) + tanh(VSA_EState5)) + ((MATS4s / BCUTc-1l) - 0.6304551))) / 0.44076297",
+          "oracle_r2": 0.5573010649335668,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "other",
+          "n_train": 156,
+          "n_test": 51,
+          "test_r2": -0.2794978259705996,
+          "test_rmse": 4.7638919652115606,
+          "test_mae": 3.766294656280693,
+          "complexity": 5,
+          "formula": "square(cube(MATS4s) + -2.2375329)",
+          "oracle_r2": 0.03437375799382281,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "imidazole_like",
+          "n_train": 143,
+          "n_test": 50,
+          "test_r2": -113.58699882156775,
+          "test_rmse": 20.55167041008837,
+          "test_mae": 4.060104027937682,
+          "complexity": 14,
+          "formula": "square(((0.59680283 - BCUTc-1h) * BCUTc-1h) * 32.605896) + (0.14455974 / (AATS1p + -2.1983013))",
+          "oracle_r2": 0.4047088758376046,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "phenol",
+          "n_train": 143,
+          "n_test": 46,
+          "test_r2": 0.47348269432033874,
+          "test_rmse": 1.745515615834442,
+          "test_mae": 1.3637644647106641,
+          "complexity": 7,
+          "formula": "((MinPartialCharge * -379.1457) / AATS2Z) + -3.249919",
+          "oracle_r2": 0.48048635976343634,
+          "source": "per_class_pysr"
+        },
+        {
+          "class": "<rare:global_fallback>",
+          "n_train": 2527,
+          "n_test": 42,
+          "test_r2": 0.08713673420128654,
+          "complexity": 3,
+          "formula": "2.2493863 / BCUTc-1h",
+          "source": "global_fallback"
+        }
+      ],
+      "n_test_total": 843
+    },
+    "global": {
+      "label": "basic_global",
+      "engine": "pysr",
+      "selected_features": [
+        "BCUTi-1h",
+        "BCUTc-1h",
+        "MID_h",
+        "BCUT2D_MRLOW",
+        "MID_N",
+        "AATSC4i",
+        "GATS1s",
+        "MinPartialCharge",
+        "JGI5",
+        "MDEO-12",
+        "RNCG",
+        "GATS4s"
+      ],
+      "complexity": 3,
+      "loss": 8.555699,
+      "formula": "2.249378 / BCUTc-1h",
+      "train_metrics": {
+        "n": 2527,
+        "r2": 0.20009670426269832,
+        "rmse": 2.9250128789956604,
+        "mae": 2.315945422497368
+      },
+      "test_metrics": {
+        "n": 843,
+        "r2": 0.21849244794448486,
+        "rmse": 2.8712171579412415,
+        "mae": 2.284082099800013
+      },
+      "oracle_best_on_test_r2": 0.3956169648372946
+    }
+  }
+]

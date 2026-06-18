@@ -1,0 +1,77 @@
+{
+  "task": "basic",
+  "engine": "pysr_parallel",
+  "overall_test_metrics": {
+    "n": 843,
+    "r2": 0.46515834469711237,
+    "rmse": 2.3752649659646123,
+    "mae": 1.6603490200386712
+  },
+  "global_test_r2": 0.2184925169661649,
+  "per_class": [
+    {
+      "class": "aniline",
+      "n_test": 113,
+      "test_r2": 0.26984698535167106,
+      "test_rmse": 2.539776214707171,
+      "complexity": 3,
+      "formula": "MinPartialCharge / -0.095342934"
+    },
+    {
+      "class": "tert_amine",
+      "n_test": 142,
+      "test_r2": 0.41143120630456065,
+      "test_rmse": 1.4005653217790959,
+      "complexity": 7,
+      "formula": "(RNCG * (PEOE_VSA7 / 6.264322)) + 7.002552"
+    },
+    {
+      "class": "prim_amine",
+      "n_test": 64,
+      "test_r2": 0.27160683691695686,
+      "test_rmse": 0.9742441925842722,
+      "complexity": 9,
+      "formula": "GATS2v + (((ATSC1c - MATS3c) / MaxAbsPartialCharge) + 8.880138)"
+    },
+    {
+      "class": "sec_amine",
+      "n_test": 55,
+      "test_r2": 0.5711706203246136,
+      "test_rmse": 1.3299953572566325,
+      "complexity": 20,
+      "formula": "((9.083374 + tanh(AATSC3Z + ((BCUT2D_LOGPLOW + 1.9595512) / -0.08603356))) - tanh(VSA_EState5)) + tanh((BCUT2D_LOGPLOW + AATS1dv) / -0.0108877225)"
+    },
+    {
+      "class": "aromatic_N",
+      "n_test": 280,
+      "test_r2": 0.3606651876424902,
+      "test_rmse": 2.365718198860685,
+      "complexity": 6,
+      "formula": "cube(1.4483776 - (MaxPartialCharge + MinPartialCharge))"
+    },
+    {
+      "class": "other",
+      "n_test": 51,
+      "test_r2": -0.27947386440943944,
+      "test_rmse": 4.763847357545645,
+      "complexity": 5,
+      "formula": "square(2.2375543 - cube(MATS4s))"
+    },
+    {
+      "class": "imidazole_like",
+      "n_test": 50,
+      "test_r2": 0.3234006434624801,
+      "test_rmse": 1.5792294863336171,
+      "complexity": 16,
+      "formula": "square(square(BCUTc-1h) * (cube(GATS1c * (AATS1p - 1.0872015)) - ((19.447342 / BCUTc-1h) - 32.06538)))"
+    },
+    {
+      "class": "phenol",
+      "n_test": 46,
+      "test_r2": 0.46955509514670624,
+      "test_rmse": 1.7520139283716722,
+      "complexity": 8,
+      "formula": "square(((AATS2Z * -0.19414379) - -8.904441) * MinPartialCharge)"
+    }
+  ]
+}

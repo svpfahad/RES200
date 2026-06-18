@@ -1,0 +1,1 @@
+1.377*BCUT2D_MRLOW - 0.01546*BCUT2D_MWHI - 5.791*exp(-2.0*(1.053 - 5.938*MaxAbsPartialCharge)**2 - 2.0*(11.34*MinAbsPartialCharge - 1.972)**2) - 5.791*exp(-2.0*(2.39 - 6.654*MinAbsPartialCharge)**2 - 2.0*exp(-4.0*(-0.7882*BCUT2D_MRLOW - 0.1023)**2 - 4.0*(-1.907*MinEStateIndex - 0.6622)**2)) + 9.622

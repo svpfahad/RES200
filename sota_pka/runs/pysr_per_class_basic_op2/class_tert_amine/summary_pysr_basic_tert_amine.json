@@ -1,0 +1,34 @@
+{
+  "label": "basic_tert_amine",
+  "engine": "pysr",
+  "selected_features": [
+    "AATSC0i",
+    "BCUTdv-1l",
+    "SPS",
+    "MATS1s",
+    "GATS1s",
+    "GATS2s",
+    "RNCG",
+    "AMID_N",
+    "GATS1c",
+    "AETA_eta",
+    "PEOE_VSA7",
+    "BCUTd-1l"
+  ],
+  "complexity": 7,
+  "loss": 1.3828807,
+  "formula": "(RNCG * (PEOE_VSA7 / 6.264322)) + 7.002552",
+  "train_metrics": {
+    "n": 443,
+    "r2": 0.3620532895260138,
+    "rmse": 1.1759595450078544,
+    "mae": 0.9072080613941916
+  },
+  "test_metrics": {
+    "n": 142,
+    "r2": 0.41143120630456065,
+    "rmse": 1.4005653217790959,
+    "mae": 1.0023164422276187
+  },
+  "oracle_best_on_test_r2": 0.5390712121587826
+}

@@ -1,0 +1,83 @@
+{
+  "label": "basic_r0_f0",
+  "mode": "direct",
+  "criterion": "bic",
+  "max_complexity": 30,
+  "corr_threshold": 0.95,
+  "n_features_pruned_pool": 884,
+  "chosen_top_k": 20,
+  "selected_features": [
+    "BCUTi-1h",
+    "BCUTc-1h",
+    "MID_h",
+    "RPCG",
+    "MDEO-12",
+    "MinPartialCharge",
+    "GATS1c",
+    "MINaasN",
+    "nBondsD",
+    "BCUT2D_LOGPLOW",
+    "BCUT2D_MRLOW",
+    "PEOE_VSA8",
+    "AMID_N",
+    "MaxPartialCharge",
+    "BCUTc-1l",
+    "GATS4i",
+    "PEOE_VSA9",
+    "fr_ketone_Topliss",
+    "AATS5p",
+    "EState_VSA7"
+  ],
+  "edge_count": 18,
+  "sympy_ops": 31,
+  "formula": "-5.793*(0.02746*PEOE_VSA8 - 1.897)*(0.01317*PEOE_VSA9 - 0.6833)*tanh(3.736*BCUTc-1h + (0.0974*MID_h + 1.054)*(0.758*RPCG + 0.07668)*(4.346*MinPartialCharge + (-0.3038*AATS5p - 1.304 + exp(-2.0*(1.323*BCUT2D_LOGPLOW + 3.517)**2))**2 + 1.082) - 1.756) + 5.73",
+  "cv_selection": [
+    {
+      "top_k": 8,
+      "cv_r2_mean": 0.38676878314427476,
+      "cv_r2_std": 0.03284678219097104,
+      "folds": [
+        0.3886343865627596,
+        0.38955177014200626,
+        0.3381108381121407,
+        0.43077813776019236
+      ]
+    },
+    {
+      "top_k": 12,
+      "cv_r2_mean": 0.43790533098399526,
+      "cv_r2_std": 0.04344089202948896,
+      "folds": [
+        0.43090070512118284,
+        0.37948737519663434,
+        0.4394183448972714,
+        0.5018148987208926
+      ]
+    },
+    {
+      "top_k": 20,
+      "cv_r2_mean": 0.4617977516770819,
+      "cv_r2_std": 0.023817451164566586,
+      "folds": [
+        0.46355385140384975,
+        0.4351316216247231,
+        0.4493061965718479,
+        0.49919933710790676
+      ]
+    }
+  ],
+  "cv_best_mean_r2": 0.4617977516770819,
+  "train_metrics": {
+    "n": 2021,
+    "r2": 0.48710465488061416,
+    "rmse": 2.325312767494047,
+    "mae": 1.7277900641053565
+  },
+  "test_metrics": {
+    "n": 506,
+    "r2": 0.4090535804155163,
+    "rmse": 2.584531003097987,
+    "mae": 1.7168200197178518
+  },
+  "elapsed_sec": 795.0
+}

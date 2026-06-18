@@ -1,0 +1,172 @@
+[
+  {
+    "task": "acidic",
+    "cls": "thiol",
+    "ok": true,
+    "r2": 0.6718501914506936,
+    "rmse": 1.8473043835165792,
+    "complexity": 14,
+    "formula": "(419.16458 / AATS2m) + (tanh((0.14787012 / (BCUT2D_MRLOW + 0.3108249)) + BCUT2D_MRLOW) / 0.35673082)",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_acidic_op2/class_thiol/predictions_pysr_acidic_thiol.csv"
+  },
+  {
+    "task": "acidic",
+    "cls": "imidazole_like",
+    "ok": true,
+    "r2": -0.4085445721887342,
+    "rmse": 2.200836486672834,
+    "complexity": 24,
+    "formula": "(((ATSC2c + 1.198694) / square(BCUTc-1h)) - (((ATSC2c / square(GATS3s)) + tanh((BCUTc-1h - 1.7099342) + AATSC0i)) / (MinPartialCharge / -1.7069719))) - -5.6090326",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_acidic_op2/class_imidazole_like/predictions_pysr_acidic_imidazole_like.csv"
+  },
+  {
+    "task": "acidic",
+    "cls": "aniline",
+    "ok": true,
+    "r2": -0.025376392296981187,
+    "rmse": 3.2383113933554752,
+    "complexity": 9,
+    "formula": "(tanh(square(MinAbsEStateIndex) / BCUT2D_MRLOW) * 4.9158835) + 7.9629107",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_acidic_op2/class_aniline/predictions_pysr_acidic_aniline.csv"
+  },
+  {
+    "task": "acidic",
+    "cls": "aromatic_N",
+    "ok": true,
+    "r2": 0.3811305328928897,
+    "rmse": 2.7441763495553855,
+    "complexity": 24,
+    "formula": "(cube(MATS2se + ((JGI4 * 25.056553) + -0.9444348)) + IC2) + ((GATS1s - MATS2se) * cube(1.8725326 / ((BCUTc-1h * GATS1s) + square(ETA_epsilon_5))))",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_acidic_op2/class_aromatic_N/predictions_pysr_acidic_aromatic_N.csv"
+  },
+  {
+    "task": "acidic",
+    "cls": "other",
+    "ok": true,
+    "r2": 0.07590922424234448,
+    "rmse": 3.365451627214661,
+    "complexity": 3,
+    "formula": "3.1396294 / BCUTc-1h",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_acidic_op2/class_other/predictions_pysr_acidic_other.csv"
+  },
+  {
+    "task": "acidic",
+    "cls": "phenol",
+    "ok": true,
+    "r2": 0.4808334106510048,
+    "rmse": 1.9394128875809233,
+    "complexity": 4,
+    "formula": "1.4311334 / square(BCUTc-1h)",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_acidic_op2/class_phenol/predictions_pysr_acidic_phenol.csv"
+  },
+  {
+    "task": "acidic",
+    "cls": "carboxylic_acid",
+    "ok": true,
+    "r2": 0.3761686748631221,
+    "rmse": 0.7484550287349675,
+    "complexity": 6,
+    "formula": "BCUT2D_MRLOW + (0.41341224 / square(MinAbsPartialCharge))",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_acidic_op2/class_carboxylic_acid/predictions_pysr_acidic_carboxylic_acid.csv"
+  },
+  {
+    "task": "basic",
+    "cls": "aniline",
+    "ok": true,
+    "r2": 0.26984698535167106,
+    "rmse": 2.539776214707171,
+    "complexity": 3,
+    "formula": "MinPartialCharge / -0.095342934",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_basic_op2/class_aniline/predictions_pysr_basic_aniline.csv"
+  },
+  {
+    "task": "basic",
+    "cls": "tert_amine",
+    "ok": true,
+    "r2": 0.41143120630456065,
+    "rmse": 1.4005653217790959,
+    "complexity": 7,
+    "formula": "(RNCG * (PEOE_VSA7 / 6.264322)) + 7.002552",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_basic_op2/class_tert_amine/predictions_pysr_basic_tert_amine.csv"
+  },
+  {
+    "task": "basic",
+    "cls": "prim_amine",
+    "ok": true,
+    "r2": 0.27160683691695686,
+    "rmse": 0.9742441925842722,
+    "complexity": 9,
+    "formula": "GATS2v + (((ATSC1c - MATS3c) / MaxAbsPartialCharge) + 8.880138)",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_basic_op2/class_prim_amine/predictions_pysr_basic_prim_amine.csv"
+  },
+  {
+    "task": "basic",
+    "cls": "sec_amine",
+    "ok": true,
+    "r2": 0.5711706203246136,
+    "rmse": 1.3299953572566325,
+    "complexity": 20,
+    "formula": "((9.083374 + tanh(AATSC3Z + ((BCUT2D_LOGPLOW + 1.9595512) / -0.08603356))) - tanh(VSA_EState5)) + tanh((BCUT2D_LOGPLOW + AATS1dv) / -0.0108877225)",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_basic_op2/class_sec_amine/predictions_pysr_basic_sec_amine.csv"
+  },
+  {
+    "task": "basic",
+    "cls": "aromatic_N",
+    "ok": true,
+    "r2": 0.3606651876424902,
+    "rmse": 2.365718198860685,
+    "complexity": 6,
+    "formula": "cube(1.4483776 - (MaxPartialCharge + MinPartialCharge))",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_basic_op2/class_aromatic_N/predictions_pysr_basic_aromatic_N.csv"
+  },
+  {
+    "task": "basic",
+    "cls": "other",
+    "ok": true,
+    "r2": -0.27947386440943944,
+    "rmse": 4.763847357545645,
+    "complexity": 5,
+    "formula": "square(2.2375543 - cube(MATS4s))",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_basic_op2/class_other/predictions_pysr_basic_other.csv"
+  },
+  {
+    "task": "basic",
+    "cls": "imidazole_like",
+    "ok": true,
+    "r2": 0.3234006434624801,
+    "rmse": 1.5792294863336171,
+    "complexity": 16,
+    "formula": "square(square(BCUTc-1h) * (cube(GATS1c * (AATS1p - 1.0872015)) - ((19.447342 / BCUTc-1h) - 32.06538)))",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_basic_op2/class_imidazole_like/predictions_pysr_basic_imidazole_like.csv"
+  },
+  {
+    "task": "basic",
+    "cls": "phenol",
+    "ok": true,
+    "r2": 0.46955509514670624,
+    "rmse": 1.7520139283716722,
+    "complexity": 8,
+    "formula": "square(((AATS2Z * -0.19414379) - -8.904441) * MinPartialCharge)",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_per_class_basic_op2/class_phenol/predictions_pysr_basic_phenol.csv"
+  },
+  {
+    "task": "basic",
+    "cls": "__global__",
+    "ok": true,
+    "r2": 0.2184925169661649,
+    "rmse": 2.8712170311502487,
+    "complexity": 3,
+    "formula": "2.2493842 / BCUTc-1h",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_global_basic_op2/predictions_pysr_basic_global.csv"
+  },
+  {
+    "task": "acidic",
+    "cls": "__global__",
+    "ok": true,
+    "r2": 0.2058050255374999,
+    "rmse": 3.013850036684296,
+    "complexity": 3,
+    "formula": "2.9682772 / BCUTc-1h",
+    "pred_path": "/Users/fahad/Downloads/RES200/sota_pka/runs/pysr_global_acidic_op2/predictions_pysr_acidic_global.csv"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "label": "acidic_phenol",
+  "engine": "pysr",
+  "selected_features": [
+    "BCUTc-1h",
+    "MinPartialCharge",
+    "AATSC8m",
+    "MinAbsPartialCharge",
+    "ATSC3d",
+    "BCUT2D_CHGLO",
+    "MAXaasC",
+    "BCUT2D_MRLOW",
+    "VSA_EState3",
+    "PEOE_VSA7",
+    "GATS8m",
+    "AMID_N"
+  ],
+  "complexity": 4,
+  "loss": 3.7486935,
+  "formula": "1.4311334 / square(BCUTc-1h)",
+  "train_metrics": {
+    "n": 560,
+    "r2": 0.51891815132779,
+    "rmse": 1.9361544886948543,
+    "mae": 1.4675350053540217
+  },
+  "test_metrics": {
+    "n": 197,
+    "r2": 0.4808334106510048,
+    "rmse": 1.9394128875809233,
+    "mae": 1.4008209069085924
+  },
+  "oracle_best_on_test_r2": 0.6074784340039039
+}

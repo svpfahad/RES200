@@ -1,0 +1,34 @@
+{
+  "label": "acidic_carboxylic_acid",
+  "engine": "pysr",
+  "selected_features": [
+    "FilterItLogS",
+    "BCUT2D_MRLOW",
+    "GATS8c",
+    "BCUTc-1h",
+    "MinAbsPartialCharge",
+    "BCUTi-1h",
+    "ATSC2i",
+    "BCUTc-1l",
+    "ATSC1dv",
+    "BCUTd-1l",
+    "qed",
+    "ATSC1c"
+  ],
+  "complexity": 6,
+  "loss": 0.5244944,
+  "formula": "BCUT2D_MRLOW + (0.41341224 / square(MinAbsPartialCharge))",
+  "train_metrics": {
+    "n": 680,
+    "r2": 0.46112976504090397,
+    "rmse": 0.7242199222193014,
+    "mae": 0.542806443004304
+  },
+  "test_metrics": {
+    "n": 221,
+    "r2": 0.3761686748631221,
+    "rmse": 0.7484550287349675,
+    "mae": 0.5385359927163486
+  },
+  "oracle_best_on_test_r2": 0.4316038540042073
+}

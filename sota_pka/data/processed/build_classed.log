@@ -1,0 +1,17 @@
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/mordred/Autocorrelation.py:97: RuntimeWarning: Mean of empty slice
+  return avec - avec.mean()
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/mordred/Constitutional.py:80: RuntimeWarning: invalid value encountered in scalar divide
+  return S / self.mol.GetNumAtoms()
+acidic/train: 2321 rows x 1718 cols | classes: carboxylic_acid=680, phenol=560, other=397, aromatic_N=260, aniline=163, imidazole_like=84, thiol=79, hydroxamic_imide_NH=32
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/mordred/Autocorrelation.py:97: RuntimeWarning: Mean of empty slice
+  return avec - avec.mean()
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Users/fahad/Downloads/RES200/.venv_mac/lib/python3.12/site-packages/mordred/Constitutional.py:80: RuntimeWarning: invalid value encountered in scalar divide
+  return S / self.mol.GetNumAtoms()
+acidic/test: 774 rows x 1714 cols | classes: carboxylic_acid=221, phenol=197, other=138, aromatic_N=96, aniline=48, imidazole_like=23, thiol=19, hydroxamic_imide_NH=10
+basic/train: 2527 rows x 1712 cols | classes: aromatic_N=858, tert_amine=443, aniline=304, prim_amine=184, sec_amine=181, other=156, imidazole_like=143, phenol=143
+basic/test: 843 rows x 1706 cols | classes: aromatic_N=280, tert_amine=142, aniline=113, prim_amine=64, sec_amine=55, other=51, imidazole_like=50, phenol=46
+done

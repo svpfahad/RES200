@@ -1,0 +1,34 @@
+{
+  "label": "basic_global",
+  "engine": "pysr",
+  "selected_features": [
+    "BCUTi-1h",
+    "BCUTc-1h",
+    "MID_h",
+    "BCUT2D_MRLOW",
+    "MID_N",
+    "AATSC4i",
+    "GATS1s",
+    "MinPartialCharge",
+    "JGI5",
+    "MDEO-12",
+    "RNCG",
+    "GATS4s"
+  ],
+  "complexity": 3,
+  "loss": 8.555698,
+  "formula": "2.2493842 / BCUTc-1h",
+  "train_metrics": {
+    "n": 2527,
+    "r2": 0.20009670336288354,
+    "rmse": 2.9250128806408404,
+    "mae": 2.3159446749175006
+  },
+  "test_metrics": {
+    "n": 843,
+    "r2": 0.2184925169661649,
+    "rmse": 2.8712170311502487,
+    "mae": 2.284080991312568
+  },
+  "oracle_best_on_test_r2": 0.40644489969790487
+}

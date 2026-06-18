@@ -1,0 +1,105 @@
+{
+  "model_name": "ridge",
+  "metrics": {
+    "r2": 0.9724260593937382,
+    "mae": 0.013638145177656939,
+    "rmse": 0.01567093746097041
+  },
+  "calibration_qhat": 0.053029246796376606,
+  "feature_columns": [
+    "cation",
+    "anion",
+    "cation_family",
+    "anion_family",
+    "temperature_K",
+    "pressure_bar",
+    "molar_mass_proxy",
+    "polarity_proxy"
+  ],
+  "target_column": "co2_solubility_mol_frac",
+  "group_column": "solvent_id",
+  "train_profile": {
+    "numeric": {
+      "temperature_K": {
+        "min": 298.15,
+        "max": 333.15,
+        "median": 313.15
+      },
+      "pressure_bar": {
+        "min": 5.0,
+        "max": 20.0,
+        "median": 10.0
+      },
+      "molar_mass_proxy": {
+        "min": 177.0,
+        "max": 422.0,
+        "median": 226.0
+      },
+      "polarity_proxy": {
+        "min": 0.36,
+        "max": 0.73,
+        "median": 0.58
+      }
+    },
+    "categorical": {
+      "cation": [
+        "bmim",
+        "choline",
+        "emim",
+        "pyr14"
+      ],
+      "anion": [
+        "bf4",
+        "dca",
+        "tfsi"
+      ],
+      "cation_family": [
+        "ammonium",
+        "imidazolium",
+        "pyrrolidinium"
+      ],
+      "anion_family": [
+        "dicyanamide",
+        "fluoroborate",
+        "sulfonylimide"
+      ]
+    },
+    "target_iqr": 0.2,
+    "train_rows": 15,
+    "calibration_rows": 6,
+    "test_rows": 9,
+    "leaderboard": [
+      {
+        "model": "ridge",
+        "r2": 0.9724260593937382,
+        "mae": 0.013638145177656939,
+        "rmse": 0.01567093746097041
+      },
+      {
+        "model": "random_forest",
+        "r2": 0.9508350375655235,
+        "mae": 0.017781262786596155,
+        "rmse": 0.020925382985486223
+      },
+      {
+        "model": "xgboost",
+        "r2": 0.8804834352765246,
+        "mae": 0.030035961866378778,
+        "rmse": 0.032625682868122445
+      },
+      {
+        "model": "dummy_mean",
+        "r2": -0.2065372886054888,
+        "mae": 0.09133333333333332,
+        "rmse": 0.10366112882671896
+      },
+      {
+        "model": "hist_gradient_boosting",
+        "r2": -0.2065372886054888,
+        "mae": 0.09133333333333332,
+        "rmse": 0.10366112882671896
+      }
+    ]
+  },
+  "alpha": 0.1
+}

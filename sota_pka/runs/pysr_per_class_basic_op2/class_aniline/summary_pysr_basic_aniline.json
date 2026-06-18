@@ -1,0 +1,34 @@
+{
+  "label": "basic_aniline",
+  "engine": "pysr",
+  "selected_features": [
+    "BCUTc-1h",
+    "MinPartialCharge",
+    "GATS4m",
+    "IC5",
+    "ATS2s",
+    "ATSC7c",
+    "AATS8d",
+    "ATSC7d",
+    "GATS3are",
+    "BCUT2D_LOGPHI",
+    "ATSC1v",
+    "GATS4d"
+  ],
+  "complexity": 3,
+  "loss": 6.7758675,
+  "formula": "MinPartialCharge / -0.095342934",
+  "train_metrics": {
+    "n": 304,
+    "r2": 0.1703213732971096,
+    "rmse": 2.60304989635162,
+    "mae": 1.9524210832598357
+  },
+  "test_metrics": {
+    "n": 113,
+    "r2": 0.26984698535167106,
+    "rmse": 2.539776214707171,
+    "mae": 1.8995076077956843
+  },
+  "oracle_best_on_test_r2": 0.38949576806724784
+}

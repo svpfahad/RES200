@@ -1,0 +1,24 @@
+PySR parallel: 17 jobs, 8 workers
+  done acidic/thiol                 R2=0.672 RMSE=1.847 cmplx=14
+  done acidic/imidazole_like        R2=-0.409 RMSE=2.201 cmplx=24
+  done acidic/aniline               R2=-0.025 RMSE=3.238 cmplx=9
+  done acidic/aromatic_N            R2=0.381 RMSE=2.744 cmplx=24
+  done acidic/other                 R2=0.076 RMSE=3.365 cmplx=3
+  done acidic/phenol                R2=0.481 RMSE=1.939 cmplx=4
+  done acidic/carboxylic_acid       R2=0.376 RMSE=0.748 cmplx=6
+  done basic/aniline                R2=0.270 RMSE=2.540 cmplx=3
+  done basic/tert_amine             R2=0.411 RMSE=1.401 cmplx=7
+  done basic/prim_amine             R2=0.272 RMSE=0.974 cmplx=9
+  done basic/sec_amine              R2=0.571 RMSE=1.330 cmplx=20
+  done basic/aromatic_N             R2=0.361 RMSE=2.366 cmplx=6
+  done basic/other                  R2=-0.279 RMSE=4.764 cmplx=5
+  done basic/imidazole_like         R2=0.323 RMSE=1.579 cmplx=16
+  done basic/phenol                 R2=0.470 RMSE=1.752 cmplx=8
+  done basic/__global__             R2=0.218 RMSE=2.871 cmplx=3
+  done acidic/__global__            R2=0.206 RMSE=3.014 cmplx=3
+
+[acidic] PySR per-class OVERALL R2=0.5266 RMSE=2.3269 (global 0.2058050255374999)
+
+[basic] PySR per-class OVERALL R2=0.4652 RMSE=2.3753 (global 0.2184925169661649)
+
+done

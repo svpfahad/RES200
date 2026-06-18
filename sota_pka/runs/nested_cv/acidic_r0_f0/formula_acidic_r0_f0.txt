@@ -1,0 +1,1 @@
+9.453*(exp(-2.0*(8.507*MaxAbsPartialCharge - 4.045)**2*(-0.05591*SlogP_VSA2 - 2.459)**2 - 2.0*(1.759*GATS1s - 1.315)**2) + tanh(2.555*GATS1s - 1.426))*(0.4856*BCUT2D_MRLOW + exp(-2.0*(0.4049*BCUT2D_MRLOW - 0.07994)**2 - 2.0*(2.977*MinAbsPartialCharge + 0.5325*BCUT2D_MRLOW + 0.1195)**2) - 0.3509) + 7.861

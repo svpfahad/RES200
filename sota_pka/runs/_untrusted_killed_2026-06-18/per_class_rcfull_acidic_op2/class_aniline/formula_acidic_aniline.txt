@@ -1,0 +1,1 @@
+-11.27*rc_q_r1_min - 62.46*AXp-4dv - 15.38*BCUTc-1h + 3.827*(0.32 - 0.2659*PEOE_VSA11)*exp(-2.0*(-0.9443*FilterItLogS - 1.629)**2) + 3.827*tanh(10.93*rc_q_r1_min - 12.24*rc_decay_q + 0.6368) + 16.55

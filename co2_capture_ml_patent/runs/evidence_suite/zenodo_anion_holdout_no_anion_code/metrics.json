@@ -1,0 +1,25 @@
+{
+  "run": "zenodo_anion_holdout_no_anion_code",
+  "note": "Anion-family holdout; anion identity code withheld from features.",
+  "target": "ln_co2_solubility",
+  "group": "anion_code",
+  "excluded_columns": [
+    "anion_code"
+  ],
+  "best_model": "xgboost",
+  "metrics": {
+    "r2": 0.7900710819460394,
+    "mae": 0.36332852769048735,
+    "rmse": 0.5952888756511041,
+    "interval_coverage": 0.945182444930217,
+    "mean_interval_width": 2.3825738430023193,
+    "test_rows": 5947.0
+  },
+  "calibration_qhat": 1.1912870768935948,
+  "features": [
+    "temperature_k",
+    "pressure_bar",
+    "cation_code",
+    "ln_pressure_bar"
+  ]
+}

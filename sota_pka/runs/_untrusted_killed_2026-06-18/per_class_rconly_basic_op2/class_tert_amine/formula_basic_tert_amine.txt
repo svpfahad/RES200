@@ -1,0 +1,1 @@
+-0.2295*rc_estate_center + 11.88 - 10.29*exp(-2.0*(2.719*rc_decay_q + (0.2812 - 2.215*rc_q_r1_sum)*(0.08211*rc_decay_en - 0.1363*rc_estate_r2_sum - 1.504) + (-0.1066*rc_estate_center - 0.07268)*exp(-2.0*(-8.077*rc_decay_q - 0.3729)**2) - 0.06922)**2)

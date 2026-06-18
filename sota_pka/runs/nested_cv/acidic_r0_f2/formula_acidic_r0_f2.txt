@@ -1,0 +1,1 @@
+-15.81*MinAbsPartialCharge - 4.5*(1.478*MaxAbsPartialCharge - 0.218)*(-0.6767*BCUT2D_MRLOW - 0.3783) - 4.5*exp(-2.0*(2.337 - 13.95*MinAbsPartialCharge)**2*(2.748 - 5.74*MaxAbsPartialCharge)**2*(9.674*MaxAbsPartialCharge - 1.506)**2 - 2.0*exp(-4.0*(0.6664 - 3.728*MinAbsPartialCharge)**2 - 4.0*(4.37*MaxAbsPartialCharge - 1.848)**2)) + 11.2

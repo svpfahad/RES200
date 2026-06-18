@@ -1,0 +1,34 @@
+{
+  "label": "acidic_aromatic_N",
+  "engine": "pysr",
+  "selected_features": [
+    "TSRW10",
+    "IC2",
+    "BCUTc-1h",
+    "JGI4",
+    "CIC2",
+    "MIC1",
+    "ATSC5dv",
+    "ETA_epsilon_5",
+    "MATS2se",
+    "GATS1s",
+    "BCUT2D_LOGPLOW",
+    "GATS5p"
+  ],
+  "complexity": 24,
+  "loss": 6.326715,
+  "formula": "(cube(MATS2se + ((JGI4 * 25.056553) + -0.9444348)) + IC2) + ((GATS1s - MATS2se) * cube(1.8725326 / ((BCUTc-1h * GATS1s) + square(ETA_epsilon_5))))",
+  "train_metrics": {
+    "n": 260,
+    "r2": 0.5007234171107732,
+    "rmse": 2.51529621881535,
+    "mae": 1.9430141471676807
+  },
+  "test_metrics": {
+    "n": 96,
+    "r2": 0.3811305328928897,
+    "rmse": 2.7441763495553855,
+    "mae": 2.1569197783583562
+  },
+  "oracle_best_on_test_r2": 0.4561697875275712
+}

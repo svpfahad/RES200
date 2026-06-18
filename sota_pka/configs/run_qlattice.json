@@ -1,0 +1,13 @@
+{
+  "target": "pKa",
+  "top_k_features": [10, 20, 40, 80, 150],
+  "criteria": ["bic", "aic"],
+  "max_complexity": [20, 50, 100, 200, 300],
+  "n_epochs": [100, 200, 500],
+  "seeds": [0, 1, 2, 3, 4],
+  "modes": ["direct", "distilled"],
+  "distillation": {
+    "teacher_prediction_weight": 0.5,
+    "experimental_label_weight": 0.5
+  }
+}

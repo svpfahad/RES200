@@ -1,0 +1,1 @@
+10.35*(2.696 - 6.669*MaxPartialCharge)*(3.595*MaxPartialCharge - 0.3336)*(0.5437*BCUT2D_MRLOW + exp(-2.0*(1.016 - 4.074*MaxPartialCharge)**2 - 2.0*(-5.715*BCUT2D_MRLOW - 0.7439)**2) - 0.124 + 1/(0.839*ATSC4pe - 1.257)) + 6.682

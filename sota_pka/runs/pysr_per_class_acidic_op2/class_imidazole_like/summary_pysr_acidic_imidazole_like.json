@@ -1,0 +1,34 @@
+{
+  "label": "acidic_imidazole_like",
+  "engine": "pysr",
+  "selected_features": [
+    "AATSC0i",
+    "ATSC1d",
+    "ATSC2c",
+    "GATS3s",
+    "ATSC4s",
+    "PEOE_VSA4",
+    "MinPartialCharge",
+    "IC1",
+    "PetitjeanIndex",
+    "BCUTc-1h",
+    "MATS1dv",
+    "ATSC3v"
+  ],
+  "complexity": 24,
+  "loss": 1.1389766,
+  "formula": "(((ATSC2c + 1.198694) / square(BCUTc-1h)) - (((ATSC2c / square(GATS3s)) + tanh((BCUTc-1h - 1.7099342) + AATSC0i)) / (MinPartialCharge / -1.7069719))) - -5.6090326",
+  "train_metrics": {
+    "n": 84,
+    "r2": 0.7719687977751746,
+    "rmse": 1.0672282982139947,
+    "mae": 0.8681207794780286
+  },
+  "test_metrics": {
+    "n": 23,
+    "r2": -0.4085445721887342,
+    "rmse": 2.200836486672834,
+    "mae": 1.581153446682865
+  },
+  "oracle_best_on_test_r2": 0.39745815496711023
+}

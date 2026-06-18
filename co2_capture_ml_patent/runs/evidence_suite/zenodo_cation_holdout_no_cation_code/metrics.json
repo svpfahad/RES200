@@ -1,0 +1,25 @@
+{
+  "run": "zenodo_cation_holdout_no_cation_code",
+  "note": "Cation-family holdout; cation identity code withheld from features.",
+  "target": "ln_co2_solubility",
+  "group": "cation_code",
+  "excluded_columns": [
+    "cation_code"
+  ],
+  "best_model": "hist_gradient_boosting",
+  "metrics": {
+    "r2": 0.5241365728381293,
+    "mae": 0.42113957273019426,
+    "rmse": 0.8753832667846064,
+    "interval_coverage": 0.9342476805163372,
+    "mean_interval_width": 2.9450259202821942,
+    "test_rows": 2479.0
+  },
+  "calibration_qhat": 1.472512960141097,
+  "features": [
+    "temperature_k",
+    "pressure_bar",
+    "anion_code",
+    "ln_pressure_bar"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "label": "basic_prim_amine",
+  "engine": "pysr",
+  "selected_features": [
+    "MaxAbsPartialCharge",
+    "SlogP_VSA4",
+    "PEOE_VSA7",
+    "AATSC4Z",
+    "MATS3c",
+    "AETA_eta_L",
+    "MATS3pe",
+    "MATS3se",
+    "ATSC1c",
+    "GATS2v",
+    "MATS7are",
+    "AATSC6d"
+  ],
+  "complexity": 9,
+  "loss": 0.76563156,
+  "formula": "GATS2v + (((ATSC1c - MATS3c) / MaxAbsPartialCharge) + 8.880138)",
+  "train_metrics": {
+    "n": 184,
+    "r2": 0.3840568201442901,
+    "rmse": 0.8750038772293677,
+    "mae": 0.6298967925397015
+  },
+  "test_metrics": {
+    "n": 64,
+    "r2": 0.27160683691695686,
+    "rmse": 0.9742441925842722,
+    "mae": 0.6746432536281556
+  },
+  "oracle_best_on_test_r2": 0.4240565280283328
+}

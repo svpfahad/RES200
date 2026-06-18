@@ -1,0 +1,11 @@
+
+===== rconly acidic (36 cols) =====
+  rconly acidic: overall R2=0.6603 RMSE=1.9711 (class-mean 0.3873)
+
+===== rconly basic (36 cols) =====
+  rconly basic: overall R2=0.5389 RMSE=2.2053 (class-mean 0.2828)
+
+===== rcfull acidic (1751 cols) =====
+  rcfull acidic: overall R2=0.6257 RMSE=2.0690 (class-mean 0.3873)
+
+===== rcfull basic (1745 cols) =====

@@ -1,0 +1,34 @@
+{
+  "label": "basic_phenol",
+  "engine": "pysr",
+  "selected_features": [
+    "MinPartialCharge",
+    "GATS6dv",
+    "VSA_EState5",
+    "GATS3m",
+    "MaxPartialCharge",
+    "MINaasC",
+    "AATS2s",
+    "GATS2dv",
+    "AATS2Z",
+    "MDEO-11",
+    "AATS4Z",
+    "EState_VSA4"
+  ],
+  "complexity": 8,
+  "loss": 3.158881,
+  "formula": "square(((AATS2Z * -0.19414379) - -8.904441) * MinPartialCharge)",
+  "train_metrics": {
+    "n": 143,
+    "r2": 0.5450136234798038,
+    "rmse": 1.77732415205829,
+    "mae": 1.3393147352760313
+  },
+  "test_metrics": {
+    "n": 46,
+    "r2": 0.46955509514670624,
+    "rmse": 1.7520139283716722,
+    "mae": 1.3567339007546328
+  },
+  "oracle_best_on_test_r2": 0.5386281155393576
+}

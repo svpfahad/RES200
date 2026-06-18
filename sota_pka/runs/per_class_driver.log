@@ -1,0 +1,10 @@
+
+===== PER-CLASS acidic (train 2321, test 774) =====
+  overall test R2=0.5876 RMSE=2.1718 MAE=1.5294
+  class-mean baseline R2=0.3873 | major classes: ['carboxylic_acid', 'phenol', 'other', 'aromatic_N', 'aniline', 'imidazole_like', 'thiol']
+
+===== PER-CLASS basic (train 2527, test 843) =====
+  overall test R2=-2.1916 RMSE=5.8023 MAE=1.7270
+  class-mean baseline R2=0.2828 | major classes: ['aromatic_N', 'tert_amine', 'aniline', 'prim_amine', 'sec_amine', 'other', 'imidazole_like', 'phenol']
+
+done

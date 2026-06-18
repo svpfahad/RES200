@@ -1,0 +1,107 @@
+{
+  "model_name": "xgboost",
+  "metrics": {
+    "r2": 0.7900710819460394,
+    "mae": 0.36332852769048735,
+    "rmse": 0.5952888756511041,
+    "interval_coverage": 0.945182444930217,
+    "mean_interval_width": 2.3825738430023193,
+    "test_rows": 5947.0
+  },
+  "calibration_qhat": 1.1912870768935948,
+  "feature_columns": [
+    "temperature_k",
+    "pressure_bar",
+    "cation_code",
+    "ln_pressure_bar"
+  ],
+  "target_column": "ln_co2_solubility",
+  "group_column": "anion_code",
+  "train_profile": {
+    "numeric": {
+      "temperature_k": {
+        "min": 271.11,
+        "max": 393.15,
+        "median": 323.15
+      },
+      "pressure_bar": {
+        "min": 0.01,
+        "max": 1050.1,
+        "median": 20.98
+      },
+      "ln_pressure_bar": {
+        "min": -4.605170185988091,
+        "max": 6.956640676711948,
+        "median": 3.043569602968151
+      }
+    },
+    "categorical": {
+      "cation_code": [
+        "C0190",
+        "C0290",
+        "C0315",
+        "C0449",
+        "C0460",
+        "C0495",
+        "C0505",
+        "C0509",
+        "C0519",
+        "C0782",
+        "C0852",
+        "C0870",
+        "C0872",
+        "C0958",
+        "C1119",
+        "C1136",
+        "C1188",
+        "C1199",
+        "C1203",
+        "C1209",
+        "C1210",
+        "C1537",
+        "C1546",
+        "C1549",
+        "C1552",
+        "C1567",
+        "C1569"
+      ]
+    },
+    "target_iqr": 1.324336486575811,
+    "train_rows": 3783,
+    "calibration_rows": 1135,
+    "test_rows": 5947,
+    "leaderboard": [
+      {
+        "model": "xgboost",
+        "r2": 0.7900710819460394,
+        "mae": 0.36332852769048735,
+        "rmse": 0.5952888756511041
+      },
+      {
+        "model": "hist_gradient_boosting",
+        "r2": 0.7279738253671598,
+        "mae": 0.366610154157244,
+        "rmse": 0.6776367958110745
+      },
+      {
+        "model": "random_forest",
+        "r2": 0.6846119483959775,
+        "mae": 0.39820382706346813,
+        "rmse": 0.7296494361109742
+      },
+      {
+        "model": "ridge",
+        "r2": 0.6041984659544926,
+        "mae": 0.588042866423996,
+        "rmse": 0.8173919751304739
+      },
+      {
+        "model": "dummy_mean",
+        "r2": -0.005894816652200596,
+        "mae": 0.9649391905434128,
+        "rmse": 1.3030705157172735
+      }
+    ]
+  },
+  "alpha": 0.1
+}

@@ -1,0 +1,34 @@
+{
+  "label": "acidic_thiol",
+  "engine": "pysr",
+  "selected_features": [
+    "MaxPartialCharge",
+    "BCUT2D_MRLOW",
+    "MATS4c",
+    "ATSC4pe",
+    "SMR_VSA5",
+    "GATS6pe",
+    "MAXaasC",
+    "AATS2m",
+    "GATS4dv",
+    "MATS3v",
+    "AATS4d",
+    "ATSC5v"
+  ],
+  "complexity": 14,
+  "loss": 4.3614793,
+  "formula": "(419.16458 / AATS2m) + (tanh((0.14787012 / (BCUT2D_MRLOW + 0.3108249)) + BCUT2D_MRLOW) / 0.35673082)",
+  "train_metrics": {
+    "n": 79,
+    "r2": 0.57451394498244,
+    "rmse": 2.0884155636418744,
+    "mae": 1.6564566860328416
+  },
+  "test_metrics": {
+    "n": 19,
+    "r2": 0.6718501914506936,
+    "rmse": 1.8473043835165792,
+    "mae": 1.4966584793532511
+  },
+  "oracle_best_on_test_r2": 0.7111727040128006
+}

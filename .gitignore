@@ -1,0 +1,19 @@
+# Virtual environments (regenerable, large)
+.venv_mac/
+.venv_wsl/
+.verify_venv/
+sota_pka/.venv_wsl/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# OS cruft
+.DS_Store
+
+# Embedded external-dataset git clones (regenerable, not our work)
+sota_pka/data/raw_external/QupKake/
+sota_pka/data/raw_external/SAT4pKa/
+sota_pka/data/raw_external/Uni-pKa/

@@ -1,0 +1,1 @@
+1.196 - 7.789*tanh((-12.27*rc_q_center - 0.5355)*(28.01*rc_q_center + 2.054)*(-2.455*MaxPartialCharge + exp(-2.0*(2.522*MaxPartialCharge - 1.215)**2 - 2.0*(1.739*rc_q_center + 0.1117 + exp(-2.0*(-23.66*rc_q_center - 4.854)**2))**2) + 0.3836))

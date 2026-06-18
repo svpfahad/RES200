@@ -1,0 +1,2 @@
+status,top_k,criterion,max_complexity,n_epochs,seed,n,r2,rmse,mae,formula
+ok,10,bic,20,1,0,765,0.4022399208833849,2.621475816833729,1.8714520250651636,-18.423*(0.10902*BCUT2DMRLOW + 0.70895)*(2.5989*MaxPartialCharge - 2.0096)*(nAcid_cat + 0.16984) + 1.6886

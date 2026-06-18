@@ -1,0 +1,76 @@
+{
+  "model_name": "xgboost",
+  "metrics": {
+    "r2": 0.2528966680215763,
+    "mae": 0.5213572854613853,
+    "rmse": 0.9318657880481419,
+    "interval_coverage": 0.8910232729959364,
+    "mean_interval_width": 1.815082311630249,
+    "test_rows": 2707.0
+  },
+  "calibration_qhat": 0.9075411398644668,
+  "feature_columns": [
+    "temperature_k",
+    "pressure_bar",
+    "ln_pressure_bar"
+  ],
+  "target_column": "ln_co2_solubility",
+  "group_column": "solvent_id",
+  "train_profile": {
+    "numeric": {
+      "temperature_k": {
+        "min": 271.11,
+        "max": 453.15,
+        "median": 323.15
+      },
+      "pressure_bar": {
+        "min": 0.01,
+        "max": 1017.6,
+        "median": 29.51
+      },
+      "ln_pressure_bar": {
+        "min": -4.605170185988091,
+        "max": 6.925202192585858,
+        "median": 3.3847291889548483
+      }
+    },
+    "categorical": {},
+    "target_iqr": 1.2231241779357953,
+    "train_rows": 6057,
+    "calibration_rows": 2101,
+    "test_rows": 2707,
+    "leaderboard": [
+      {
+        "model": "xgboost",
+        "r2": 0.2528966680215763,
+        "mae": 0.5213572854613853,
+        "rmse": 0.9318657880481419
+      },
+      {
+        "model": "ridge",
+        "r2": 0.2514270404676462,
+        "mae": 0.595175432330473,
+        "rmse": 0.9327818747243048
+      },
+      {
+        "model": "random_forest",
+        "r2": 0.21829477213776027,
+        "mae": 0.5288794695907753,
+        "rmse": 0.953201109460263
+      },
+      {
+        "model": "hist_gradient_boosting",
+        "r2": 0.2009484956474218,
+        "mae": 0.5352798987853532,
+        "rmse": 0.9637189919619373
+      },
+      {
+        "model": "dummy_mean",
+        "r2": -0.03279163893294812,
+        "mae": 0.8743467593834756,
+        "rmse": 1.095643805420742
+      }
+    ]
+  },
+  "alpha": 0.1
+}

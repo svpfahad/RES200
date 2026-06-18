@@ -1,0 +1,247 @@
+{
+  "created": "2019-06-21T08:53:04.735097+00:00",
+  "modified": "2024-07-22T21:34:02.805831+00:00",
+  "id": 3251643,
+  "conceptrecid": "3251642",
+  "doi": "10.5281/zenodo.3251643",
+  "conceptdoi": "10.5281/zenodo.3251642",
+  "doi_url": "https://doi.org/10.5281/zenodo.3251643",
+  "metadata": {
+    "title": "Ionic liquid Properties",
+    "doi": "10.5281/zenodo.3251643",
+    "publication_date": "2019-06-21",
+    "description": "<p>The set contains experimental data for 12 different properties: melting point, glass transition temperature, thermal decomposition temperature, viscosity, density, heat capacity, CO2 capacity, electrical and thermal conductivity, cytotoxicity towards the leukemia rat cell line IPC-81, surface tension and refractive index. The accompanying PDF file contains the literature references from which the data has been obtained.&nbsp; The structures for all the cations and anions are provided in the SMILES format.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Vishwesh Venkatraman",
+        "affiliation": "NTNU",
+        "orcid": "0000-0001-7609-2245"
+      },
+      {
+        "name": "Sigvart Evjen",
+        "affiliation": "NTNU"
+      },
+      {
+        "name": "Kallidanthiyil Chellappan Lethesh",
+        "affiliation": "NTNU",
+        "orcid": "0000-0002-6347-9755"
+      }
+    ],
+    "keywords": [
+      "ionic liquids"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3251642"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Ionic liquid Properties",
+  "links": {
+    "self": "https://zenodo.org/api/records/3251643",
+    "self_html": "https://zenodo.org/records/3251643",
+    "preview_html": "https://zenodo.org/records/3251643?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.3251643",
+    "self_doi": "https://doi.org/10.5281/zenodo.3251643",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3251643",
+    "reserve_doi": "https://zenodo.org/api/records/3251643/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3251642",
+    "parent_html": "https://zenodo.org/records/3251642",
+    "parent_doi": "https://doi.org/10.5281/zenodo.3251642",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3251642",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3251643/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3251643/sequence/default",
+    "files": "https://zenodo.org/api/records/3251643/files",
+    "media_files": "https://zenodo.org/api/records/3251643/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:3251643:Properties_Refs.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:3251643:Properties_Refs.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:3251643:Properties_Refs.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:3251643:Properties_Refs.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:3251643:Properties_Refs.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:3251643:Properties_Refs.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/3251643/files-archive",
+    "archive_media": "https://zenodo.org/api/records/3251643/media-files-archive",
+    "latest": "https://zenodo.org/api/records/3251643/versions/latest",
+    "latest_html": "https://zenodo.org/records/3251643/latest",
+    "versions": "https://zenodo.org/api/records/3251643/versions",
+    "draft": "https://zenodo.org/api/records/3251643/draft",
+    "access_links": "https://zenodo.org/api/records/3251643/access/links",
+    "access_grants": "https://zenodo.org/api/records/3251643/access/grants",
+    "access_users": "https://zenodo.org/api/records/3251643/access/users",
+    "access_request": "https://zenodo.org/api/records/3251643/access/request",
+    "access": "https://zenodo.org/api/records/3251643/access",
+    "communities": "https://zenodo.org/api/records/3251643/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/3251643/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/3251643/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/3251643/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/3251643/quota-increase",
+    "requests": "https://zenodo.org/api/records/3251643/requests"
+  },
+  "updated": "2024-07-22T21:34:02.805831+00:00",
+  "recid": "3251643",
+  "revision": 7,
+  "files": [
+    {
+      "id": "92fe048f-fff1-4d5b-8d59-88e94e92922d",
+      "key": "MP.txt",
+      "size": 34184,
+      "checksum": "md5:67162aef7f1af93c76c2c85e256f20d4",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/MP.txt/content"
+      }
+    },
+    {
+      "id": "e17fa4c2-36f5-42a8-843c-487cbbdae053",
+      "key": "CA.smi",
+      "size": 97193,
+      "checksum": "md5:adae3bb91bb47e4aaf167368c59ee055",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/CA.smi/content"
+      }
+    },
+    {
+      "id": "fadc5baf-f9cd-4ff5-9a50-2a19a1ae3819",
+      "key": "CO2CAPACITY.txt",
+      "size": 356362,
+      "checksum": "md5:7f195d4b0043125aabb16c860a9a9d77",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/CO2CAPACITY.txt/content"
+      }
+    },
+    {
+      "id": "108b6e3a-f465-440a-848c-dd488f47e009",
+      "key": "CONDUCTIVITY.txt",
+      "size": 80597,
+      "checksum": "md5:b089180af7315fe4c2ee2496fa3d081f",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/CONDUCTIVITY.txt/content"
+      }
+    },
+    {
+      "id": "1d4e473e-d2ce-4909-afc1-f079b218afda",
+      "key": "CYTOTOXICITY.txt",
+      "size": 3847,
+      "checksum": "md5:99f06f3cf339a8581a17274b2cd14a99",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/CYTOTOXICITY.txt/content"
+      }
+    },
+    {
+      "id": "48650292-3b82-47b4-91a3-17fcce2c65a6",
+      "key": "DENSITY.txt",
+      "size": 541517,
+      "checksum": "md5:6c2833a48994f60892ca57ad5eabbc5d",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/DENSITY.txt/content"
+      }
+    },
+    {
+      "id": "9e05222f-3605-4dd5-95fe-3a161efc575a",
+      "key": "GTT.txt",
+      "size": 10446,
+      "checksum": "md5:6f85fdce78858adc3e051d4f4a037c09",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/GTT.txt/content"
+      }
+    },
+    {
+      "id": "4d806a1f-4dd8-4c3e-9714-c6efa92689b0",
+      "key": "HEATCAPACITY.txt",
+      "size": 285586,
+      "checksum": "md5:fb3c6159850942ad68a9e568ab37416b",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/HEATCAPACITY.txt/content"
+      }
+    },
+    {
+      "id": "c268da67-f30d-45f5-ac26-e6d3f689866a",
+      "key": "Properties_Refs.pdf",
+      "size": 1524601,
+      "checksum": "md5:ce269d3c10081cde65ef4914048d8fb5",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/Properties_Refs.pdf/content"
+      }
+    },
+    {
+      "id": "f3c79e12-a83d-41d7-9189-e17ba472a258",
+      "key": "RI.txt",
+      "size": 71371,
+      "checksum": "md5:13d7a24c690a7e505796dbfb4c8723a7",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/RI.txt/content"
+      }
+    },
+    {
+      "id": "a8114f48-3781-4c00-985e-434b2f33b171",
+      "key": "SURFACETENSION.txt",
+      "size": 77063,
+      "checksum": "md5:d579c65c1d3f83c58448c839f90ec2cd",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/SURFACETENSION.txt/content"
+      }
+    },
+    {
+      "id": "91668e71-14cf-43b4-bc65-c06f7252e9b4",
+      "key": "TDECOMP.txt",
+      "size": 19799,
+      "checksum": "md5:8e4226c86bfe223be6d14be35b7fd79a",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/TDECOMP.txt/content"
+      }
+    },
+    {
+      "id": "fbdf610c-3f94-49ee-9ca3-f7bf67daa16f",
+      "key": "THCOND.txt",
+      "size": 11342,
+      "checksum": "md5:d175ea41024a3550743447b325ad00b8",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/THCOND.txt/content"
+      }
+    },
+    {
+      "id": "d54edde4-626f-44cb-a7ac-6a5acbb5d335",
+      "key": "VISCOSITY.txt",
+      "size": 226005,
+      "checksum": "md5:b8f8d369b0552816e168fa5dc28dc03a",
+      "links": {
+        "self": "https://zenodo.org/api/records/3251643/files/VISCOSITY.txt/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "70257"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 5355,
+    "unique_downloads": 3832,
+    "views": 2558,
+    "unique_views": 2228,
+    "version_downloads": 5318,
+    "version_unique_downloads": 3823,
+    "version_unique_views": 2214,
+    "version_views": 2540
+  },
+  "state": "done",
+  "submitted": true
+}

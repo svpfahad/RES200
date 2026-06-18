@@ -1,0 +1,20 @@
+{
+  "target": "pKa",
+  "seed": 42,
+  "baseline_models": ["elasticnet", "random_forest", "xgboost", "lightgbm", "catboost"],
+  "fingerprints": {
+    "morgan_radii": [1, 2, 3, 4],
+    "morgan_bits": [256, 512, 1024, 2048, 4096, 8192, 16384],
+    "include_maccs": true
+  },
+  "optuna": {
+    "n_trials_tree_models": 100,
+    "timeout_seconds_per_model": 7200
+  },
+  "splits": ["random", "scaffold", "external"],
+  "acceptance_reference": {
+    "dataset": "RES200 OP2 acidic full descriptors",
+    "test_r2": 0.830,
+    "test_rmse": 1.397
+  }
+}

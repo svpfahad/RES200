@@ -1,0 +1,16 @@
+[
+  {
+    "key": "CA.smi",
+    "size": 97193,
+    "checksum": "md5:adae3bb91bb47e4aaf167368c59ee055",
+    "url": "https://zenodo.org/api/records/3251643/files/CA.smi/content",
+    "local_path": "data\\raw\\zenodo_3251643\\CA.smi"
+  },
+  {
+    "key": "CO2CAPACITY.txt",
+    "size": 356362,
+    "checksum": "md5:7f195d4b0043125aabb16c860a9a9d77",
+    "url": "https://zenodo.org/api/records/3251643/files/CO2CAPACITY.txt/content",
+    "local_path": "data\\raw\\zenodo_3251643\\CO2CAPACITY.txt"
+  }
+]

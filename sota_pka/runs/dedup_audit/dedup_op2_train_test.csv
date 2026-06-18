@@ -1,0 +1,3 @@
+task,train_test_canonical_overlap,n_train_unique,n_test_unique
+acidic,1,2320,774
+basic,0,2527,843

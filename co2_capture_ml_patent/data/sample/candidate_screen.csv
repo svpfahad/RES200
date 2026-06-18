@@ -1,0 +1,6 @@
+candidate_id,solvent_id,cation,anion,cation_family,anion_family,temperature_K,pressure_bar,molar_mass_proxy,polarity_proxy
+candidate_1,bmim_tfsi,bmim,tfsi,imidazolium,sulfonylimide,323.15,15,419,0.39
+candidate_2,pyr14_tfsi,pyr14,tfsi,pyrrolidinium,sulfonylimide,323.15,15,422,0.36
+candidate_3,new_fsi,newcat,fsi,phosphonium,sulfonylimide,358.15,80,520,0.30
+candidate_4,choline_dca,choline,dca,ammonium,dicyanamide,323.15,15,193,0.77
+

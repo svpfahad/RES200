@@ -1,0 +1,34 @@
+{
+  "label": "basic_imidazole_like",
+  "engine": "pysr",
+  "selected_features": [
+    "AATS1p",
+    "JGI5",
+    "Mp",
+    "GATS1c",
+    "AATS2p",
+    "BCUT2D_MWHI",
+    "EState_VSA9",
+    "ATSC4Z",
+    "MATS3c",
+    "AATSC5i",
+    "MATS1c",
+    "BCUTc-1h"
+  ],
+  "complexity": 16,
+  "loss": 2.200137,
+  "formula": "square(square(BCUTc-1h) * (cube(GATS1c * (AATS1p - 1.0872015)) - ((19.447342 / BCUTc-1h) - 32.06538)))",
+  "train_metrics": {
+    "n": 143,
+    "r2": 0.6038348436098055,
+    "rmse": 1.4832859079684053,
+    "mae": 1.0958348254490613
+  },
+  "test_metrics": {
+    "n": 50,
+    "r2": 0.3234006434624801,
+    "rmse": 1.5792294863336171,
+    "mae": 1.0974747597444408
+  },
+  "oracle_best_on_test_r2": 0.5716738033636791
+}

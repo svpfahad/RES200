@@ -1,0 +1,10 @@
+source,kind,url,planned_use,citation_note
+RES200_OP1_OP2_OP3,local,C:\Users\Fahad\Downloads\RES200\RES 200-20260312T035531Z-1-001\RES 200,primary internal benchmark,Current project DataWarrior-derived splits
+IUPAC_pKa,public_dataset,https://huggingface.co/datasets/maomlab/IUPAC_pKa,high-confidence external/open training data,Use dataset card and original GitHub citation
+SAMPL6,public_challenge,https://github.com/samplchallenges/SAMPL6,external blind-style benchmark,Use SAMPL6 pKa challenge overview citation
+SAMPL7,public_challenge,https://github.com/samplchallenges/SAMPL7,external blind-style benchmark,Use SAMPL7 challenge citation
+SAT4pKa,public_repo,https://github.com/Yu-Xin-Qiu/SAT4pKa,graph transformer comparator/data source,Use Chemical Engineering Science graph transformer pKa paper
+Uni-pKa,public_repo,https://github.com/dptech-corp/Uni-pKa,foundation/thermodynamics comparator,Use JACS Au Uni-pKa paper
+QupKake,public_repo,https://github.com/Shualdon/QupKake,external SOTA comparator or feature source if xTB works,Use JCTC QupKake paper
+Chemprop,public_repo,https://github.com/chemprop/chemprop,MPNN neural baseline,Use Chemprop package papers
+Feyn_QLattice,package_docs,https://docs.abzu.ai/docs/guides/getting_started/qlattice,symbolic regression layer,Use Feyn/QLattice documentation and symbolic regression paper

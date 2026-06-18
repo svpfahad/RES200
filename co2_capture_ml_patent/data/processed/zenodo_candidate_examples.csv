@@ -1,0 +1,5 @@
+candidate_id,solvent_id,temperature_k,pressure_bar,cation_code,anion_code,ln_pressure_bar,cation_smiles,anion_smiles
+zenodo_observed_q20,C0852_A0020,353.15,7.96,C0852,A0020,2.074428999856292,OCC[n+]1ccn(c1)C,F[B-](F)(F)F
+zenodo_observed_q50,C0852_A0020,303.15,11.02,C0852,A0020,2.3997118037247684,OCC[n+]1ccn(c1)C,F[B-](F)(F)F
+zenodo_observed_q80,C0530_A0048,298.15,40.13,C0530,A0048,3.692124184278825,OCC[n+]1ccccc1,FC(S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F)(F)F
+deliberate_ood_high_pressure,C9999_A9999,500.0,1500.0,C9999,A9999,7.313220387090301,C[N+](C)(C)C,[Cl-]

@@ -1,0 +1,261 @@
+[
+  {
+    "task": "acidic",
+    "overall_test_metrics": {
+      "n": 774,
+      "r2": 0.5876082663918865,
+      "rmse": 2.1717660872159574,
+      "mae": 1.5293830368054606
+    },
+    "class_mean_baseline_test": {
+      "n": 774,
+      "r2": 0.38730716278679445,
+      "rmse": 2.647155619772916,
+      "mae": 1.9524759240872027
+    },
+    "major_classes": [
+      "carboxylic_acid",
+      "phenol",
+      "other",
+      "aromatic_N",
+      "aniline",
+      "imidazole_like",
+      "thiol"
+    ],
+    "per_class": [
+      {
+        "class": "carboxylic_acid",
+        "n_train": 680,
+        "n_test": 221,
+        "test_r2": 0.4511938647433775,
+        "test_rmse": 0.7020072547026667,
+        "test_mae": 0.48556069044011213,
+        "k": 8,
+        "complexity": 15,
+        "formula": "1.307*(3.661*BCUTc-1l + 3.03)*(-0.002999*MinAbsPartialCharge + (6.075*BCUTc-1h - 3.793 - 0.0342/(6.93 - 9.939*BCUTc-1h))**2 - 1.264) + 4.211",
+        "source": "per_class"
+      },
+      {
+        "class": "phenol",
+        "n_train": 560,
+        "n_test": 197,
+        "test_r2": 0.6023139874683838,
+        "test_rmse": 1.6974112152055736,
+        "test_mae": 1.2951816770058502,
+        "k": 4,
+        "complexity": 18,
+        "formula": "12.89*(6.683*BCUTc-1h - 4.149)*(-0.5793*MinAbsPartialCharge - 0.2727 + exp(-2.0*(3.707*BCUTc-1h - 2.576)**2*(10.08*MinPartialCharge + 3.647)**2)) + 2.45",
+        "source": "per_class"
+      },
+      {
+        "class": "other",
+        "n_train": 397,
+        "n_test": 138,
+        "test_r2": 0.2686556759961558,
+        "test_rmse": 2.993966817391737,
+        "test_mae": 2.4279146097067033,
+        "k": 8,
+        "complexity": 29,
+        "formula": "12.25*exp(-2.0*(0.1145 - 0.02752*TopoPSA)**2*(0.8109*AMID_O + exp(-2.0*(1.498 - 5.095*ATSC0c)**2 - 2.0*(1.242*MAXdssC - 0.02545)**2) - 0.3907)**2 - 2.0*(4.471*BCUTc-1h - 0.9839)**2) + 5.614",
+        "source": "per_class"
+      },
+      {
+        "class": "aromatic_N",
+        "n_train": 260,
+        "n_test": 96,
+        "test_r2": 0.3676939002146761,
+        "test_rmse": 2.773806582758823,
+        "test_mae": 2.2996068095175217,
+        "k": 6,
+        "complexity": 22,
+        "formula": "14.9*exp(-2.0*(1.12 - 3.907*BCUTc-1h)**2 - 2.0*(0.6429*IC2 + (1.288 - 0.05739*MIC1)*(8.819*BCUTc-1h - 4.854)*(16.36*JGI4 - 1.715) - 2.463)**2) + 4.724",
+        "source": "per_class"
+      },
+      {
+        "class": "aniline",
+        "n_train": 163,
+        "n_test": 48,
+        "test_r2": 0.1099294953408354,
+        "test_rmse": 3.017096183341322,
+        "test_mae": 2.172921913166204,
+        "k": 4,
+        "complexity": 22,
+        "formula": "34.39*AATSC5se - 1.449*FilterItLogS + 8.591*exp(-2.0*(4.247 - 7.413*GATS2Z)**2*(0.3064*PEOE_VSA11 + 0.2191)**2 - 2.0*(-0.6794*FilterItLogS - 0.9337)**2) + 3.253",
+        "source": "per_class"
+      },
+      {
+        "class": "imidazole_like",
+        "n_train": 84,
+        "n_test": 23,
+        "test_r2": -0.7521674341232698,
+        "test_rmse": 2.454653990323638,
+        "test_mae": 1.8859427042403367,
+        "k": 4,
+        "complexity": 16,
+        "formula": "-3.67*log(0.3224*AATSC0i - 0.3355)*tanh((1.204 - 3.541*ATSC2c)*(0.3307*ATSC1d - 0.2249) + 0.000573*exp(9.077*GATS3s)) + 5.223",
+        "source": "per_class"
+      },
+      {
+        "class": "thiol",
+        "n_train": 79,
+        "n_test": 19,
+        "test_r2": 0.6528269162723994,
+        "test_rmse": 1.9000954005756412,
+        "test_mae": 1.6612595450702936,
+        "k": 4,
+        "complexity": 27,
+        "formula": "10.35*(2.696 - 6.669*MaxPartialCharge)*(3.595*MaxPartialCharge - 0.3336)*(0.5437*BCUT2D_MRLOW + exp(-2.0*(1.016 - 4.074*MaxPartialCharge)**2 - 2.0*(-5.715*BCUT2D_MRLOW - 0.7439)**2) - 0.124 + 1/(0.839*ATSC4pe - 1.257)) + 6.682",
+        "source": "per_class"
+      },
+      {
+        "class": "<rare:global_fallback>",
+        "n_train": 2321,
+        "n_test": 32,
+        "test_r2": 0.26573460845610564,
+        "test_rmse": 3.327740146013575,
+        "test_mae": 2.6946072590925283,
+        "k": 8,
+        "complexity": 29,
+        "formula": "-5.796*BCUTc-1l - 5.315*tanh(5.339*BCUTc-1h + exp(-2.0*(1.889 - 2.94*BCUTc-1h)**4*(0.0241*SlogP_VSA2 - 3.025)**4*(0.074*PEOE_VSA13 - 15.55*AATSC2se + 0.6731)**4 - 2.0*(0.8513*ATSC3c - 0.3421)**2) - 2.141) + 6.718",
+        "source": "global_fallback"
+      }
+    ],
+    "n_test_total": 774
+  },
+  {
+    "task": "basic",
+    "overall_test_metrics": {
+      "n": 843,
+      "r2": -2.1915863534371884,
+      "rmse": 5.8023343508153475,
+      "mae": 1.7270397214739974
+    },
+    "class_mean_baseline_test": {
+      "n": 843,
+      "r2": 0.28283145417072564,
+      "rmse": 2.75048998444257,
+      "mae": 2.05440366007144
+    },
+    "major_classes": [
+      "aromatic_N",
+      "tert_amine",
+      "aniline",
+      "prim_amine",
+      "sec_amine",
+      "other",
+      "imidazole_like",
+      "phenol"
+    ],
+    "per_class": [
+      {
+        "class": "aromatic_N",
+        "n_train": 858,
+        "n_test": 280,
+        "test_r2": 0.4737465418487504,
+        "test_rmse": 2.1463291097470023,
+        "test_mae": 1.6383837594589266,
+        "k": 6,
+        "complexity": 27,
+        "formula": "10.87 - 10.81*exp(-2.0*(0.6729 - 1.624*RPCG)**2 - 2.0*(0.3765*MATS1se + 1.085*MinPartialCharge + exp(-2.0*(0.8151 - 4.135*MaxPartialCharge)**2 - 2.0*(2.789 - 5.149*BCUTc-1h)**2) - 0.1724)**2)",
+        "source": "per_class"
+      },
+      {
+        "class": "tert_amine",
+        "n_train": 443,
+        "n_test": 142,
+        "test_r2": 0.3086168688537331,
+        "test_rmse": 1.517973334558576,
+        "test_mae": 1.1287122974440607,
+        "k": 8,
+        "complexity": 23,
+        "formula": "3.77*exp(-2.0*(1.465*AATSC0i - 1.875)**2*(2.034*GATS2s - 2.417)**2*(16.08*AMID_N - 2.336)**2 - 2.0*(0.2973*GATS2s - 1.857*RNCG + 0.9461)**2) + 6.664",
+        "source": "per_class"
+      },
+      {
+        "class": "aniline",
+        "n_train": 304,
+        "n_test": 113,
+        "test_r2": 0.36458324009711784,
+        "test_rmse": 2.3692879365036013,
+        "test_mae": 1.6081057950009703,
+        "k": 4,
+        "complexity": 14,
+        "formula": "4.938*tanh((15.4*BCUTc-1h - 5.154)*(-1.707*GATS4m + 0.3933*IC5 - 0.4185 + 0.009343*exp(-9.06*MinPartialCharge))) + 4.606",
+        "source": "per_class"
+      },
+      {
+        "class": "prim_amine",
+        "n_train": 184,
+        "n_test": 64,
+        "test_r2": 0.549466469794637,
+        "test_rmse": 0.7662111266843127,
+        "test_mae": 0.5646808495470609,
+        "k": 6,
+        "complexity": 21,
+        "formula": "2.411*MaxAbsPartialCharge - 3.233*MATS3c + 3.421*exp(-2.0*(0.9117 - 2.028*AETA_eta_L)**2 - 2.0*(0.1487*SlogP_VSA4 + 0.04194)**2*(0.1871*AATSC4Z + 0.07449)**2) + 6.022",
+        "source": "per_class"
+      },
+      {
+        "class": "sec_amine",
+        "n_train": 181,
+        "n_test": 55,
+        "test_r2": 0.36981864379448015,
+        "test_rmse": 1.612280622221552,
+        "test_mae": 1.1687294151746936,
+        "k": 4,
+        "complexity": 43,
+        "formula": "4.886*exp(-2.0*(0.6397 - 0.01747*AATSC3Z)**2*exp(-4.0*(-0.9733*BCUT2D_LOGPLOW - 2.146)**2 - 4.0*(-5.96*BCUTc-1l - 2.568)**2) - 2.0*(4.434*MATS4s - 1.127)**2*(-3.015*BCUT2D_LOGPLOW - 8.137)**2*(1.593*BCUT2D_LOGPLOW + 3.745)**2*(-0.499*AATSC3Z - 3.356*BCUT2D_LOGPLOW - 7.132)**2) + 5.784",
+        "source": "per_class"
+      },
+      {
+        "class": "other",
+        "n_train": 156,
+        "n_test": 51,
+        "test_r2": -26.860014623400584,
+        "test_rmse": 22.22965885673313,
+        "test_mae": 6.258064036288483,
+        "k": 8,
+        "complexity": 20,
+        "formula": "-94.66*(13.13*MinAbsPartialCharge - 2.635)*(0.003729*GATS2c + sqrt(exp(-2.0*(4.424 - 8.211*GATS1s)**2 - 1.993e-5*exp(39.83*MaxAbsPartialCharge))) - 0.08947) + 2.917",
+        "source": "per_class"
+      },
+      {
+        "class": "imidazole_like",
+        "n_train": 143,
+        "n_test": 50,
+        "test_r2": 0.2985388168136712,
+        "test_rmse": 1.6079823439222618,
+        "test_mae": 1.2456354630309479,
+        "k": 4,
+        "complexity": 17,
+        "formula": "7.829 - 6.654*exp(-2.0*(1.037*GATS1c - 1.778)**2 - 2.0*(2.185*AATS1p - 5.707*JGI5 - 14.0*Mp + 6.468)**2)",
+        "source": "per_class"
+      },
+      {
+        "class": "phenol",
+        "n_train": 143,
+        "n_test": 46,
+        "test_r2": 0.37611840171582434,
+        "test_rmse": 1.9000651892477736,
+        "test_mae": 1.376564051083858,
+        "k": 8,
+        "complexity": 21,
+        "formula": "8.65 - 13.41*exp(-2.0*(0.9602 - 2.198*GATS2dv)**2*(2.137 - 0.4677*AATS2s)**2 - 2.0*(4.019 - 4.241*MINaasC)**2*(17.55*MinPartialCharge + 8.701)**2)",
+        "source": "per_class"
+      },
+      {
+        "class": "<rare:global_fallback>",
+        "n_train": 2527,
+        "n_test": 42,
+        "test_r2": 0.31261928817975815,
+        "test_rmse": 3.28052675404757,
+        "test_mae": 2.618315569623249,
+        "k": 6,
+        "complexity": 30,
+        "formula": "14.02*sqrt((0.2279*BCUT2D_MRLOW - 0.1108)*(-0.08557*MID_h + 0.1497*MID_N - 0.5113) + exp(-2.0*(29.83 - 2.092*BCUTi-1h)**2 - 2.0*(4.216*BCUTc-1h + (6.62 - 0.4011*BCUTi-1h)*(0.07666*MID_N - 0.6894)**2 - 1.03)**2)) + 0.2518",
+        "source": "global_fallback"
+      }
+    ],
+    "n_test_total": 843
+  }
+]

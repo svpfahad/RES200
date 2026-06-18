@@ -1,0 +1,24 @@
+{
+  "run": "zenodo_solvent_holdout_full",
+  "note": "Solvent-held-out split with ion identity codes and derived SMILES descriptors.",
+  "target": "ln_co2_solubility",
+  "group": "solvent_id",
+  "excluded_columns": [],
+  "best_model": "xgboost",
+  "metrics": {
+    "r2": 0.32256929036419335,
+    "mae": 0.44646485239737477,
+    "rmse": 0.8873510573931205,
+    "interval_coverage": 0.8596231991134097,
+    "mean_interval_width": 1.4720135927200317,
+    "test_rows": 2707.0
+  },
+  "calibration_qhat": 0.7360068250630638,
+  "features": [
+    "temperature_k",
+    "pressure_bar",
+    "cation_code",
+    "anion_code",
+    "ln_pressure_bar"
+  ]
+}

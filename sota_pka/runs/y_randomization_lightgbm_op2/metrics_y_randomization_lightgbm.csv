@@ -1,0 +1,2 @@
+control,model,seed,n,r2,rmse,mae
+y_randomization,lightgbm,42,765,-0.13597209098202168,3.613817633112982,2.994746427133739

@@ -1,0 +1,34 @@
+{
+  "label": "basic_other",
+  "engine": "pysr",
+  "selected_features": [
+    "MaxAbsPartialCharge",
+    "MinAbsPartialCharge",
+    "GATS2dv",
+    "GATS1s",
+    "GATS2c",
+    "MinAbsEStateIndex",
+    "SPS",
+    "AATS1se",
+    "RPCG",
+    "GATS3Z",
+    "MINssCH2",
+    "MATS4s"
+  ],
+  "complexity": 5,
+  "loss": 18.155071,
+  "formula": "square(2.2375543 - cube(MATS4s))",
+  "train_metrics": {
+    "n": 156,
+    "r2": 0.18159561165158877,
+    "rmse": 4.2608770862098115,
+    "mae": 3.2174706054729123
+  },
+  "test_metrics": {
+    "n": 51,
+    "r2": -0.27947386440943944,
+    "rmse": 4.763847357545645,
+    "mae": 3.7662324796156996
+  },
+  "oracle_best_on_test_r2": -0.002353575997962487
+}

@@ -1,0 +1,23 @@
+{
+  "best_model": "xgboost",
+  "metrics": {
+    "r2": 0.3322274964377605,
+    "mae": 0.43621727262796023,
+    "rmse": 0.881002817189999,
+    "interval_coverage": 0.8496490579977836,
+    "mean_interval_width": 1.3877391815185547,
+    "test_rows": 2707.0
+  },
+  "calibration_qhat": 0.6938694820752964,
+  "target": "ln_co2_solubility",
+  "group": "solvent_id",
+  "features": [
+    "temperature_k",
+    "pressure_bar",
+    "cation_code",
+    "anion_code",
+    "ln_pressure_bar",
+    "cation_smiles",
+    "anion_smiles"
+  ]
+}

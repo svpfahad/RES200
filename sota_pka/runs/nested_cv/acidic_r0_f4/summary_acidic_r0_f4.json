@@ -1,0 +1,71 @@
+{
+  "label": "acidic_r0_f4",
+  "mode": "direct",
+  "criterion": "bic",
+  "max_complexity": 30,
+  "corr_threshold": 0.95,
+  "n_features_pruned_pool": 612,
+  "chosen_top_k": 8,
+  "selected_features": [
+    "MaxAbsPartialCharge",
+    "MinAbsPartialCharge",
+    "GATS1s",
+    "SlogP_VSA2",
+    "BCUT2D_MRLOW",
+    "GATS2dv",
+    "MinAbsEStateIndex",
+    "ATSC6m"
+  ],
+  "edge_count": 29,
+  "sympy_ops": 57,
+  "formula": "-9.196*(0.816*MinAbsEStateIndex + 1.385)*(-0.6307*MaxAbsPartialCharge + exp(-2.0*(2.992*MinAbsPartialCharge - 1.054)**2 - 2.0*exp(-4.0*(2.848e-5*SlogP_VSA2 + exp(-2.0*(1.856 - 1.501*GATS2dv)**2 - 2.0*(-0.1066*BCUT2D_MRLOW + (16.18*MaxAbsPartialCharge - 5.154)*(9.937*MinAbsPartialCharge + 2.024*GATS1s - 3.946) - 0.1007)**2) - 0.4942)**2 - 4.0*exp(-4.0*(0.3593*BCUT2D_MRLOW + 0.8655)**2 - 4.0*(-0.7813*MaxAbsPartialCharge - 1.8*GATS1s + 2.073)**2))) - 0.06497) + 6.486",
+  "cv_selection": [
+    {
+      "top_k": 8,
+      "cv_r2_mean": 0.4558985757360091,
+      "cv_r2_std": 0.02093861936036879,
+      "folds": [
+        0.4823616935940217,
+        0.4264050008297141,
+        0.44795484764769555,
+        0.466872760872605
+      ]
+    },
+    {
+      "top_k": 12,
+      "cv_r2_mean": 0.45668456085674036,
+      "cv_r2_std": 0.023252115097341184,
+      "folds": [
+        0.48746436808072635,
+        0.4706087069792022,
+        0.43765999500981345,
+        0.43100517335721966
+      ]
+    },
+    {
+      "top_k": 20,
+      "cv_r2_mean": 0.45321290141638587,
+      "cv_r2_std": 0.012750849085838335,
+      "folds": [
+        0.47414017460733504,
+        0.4413332735253278,
+        0.4525833274015656,
+        0.44479483013131493
+      ]
+    }
+  ],
+  "cv_best_mean_r2": 0.45668456085674036,
+  "train_metrics": {
+    "n": 1835,
+    "r2": 0.5133176870245106,
+    "rmse": 2.3693340249358354,
+    "mae": 1.7111874427768798
+  },
+  "test_metrics": {
+    "n": 458,
+    "r2": 0.5123877308592419,
+    "rmse": 2.3276105954270343,
+    "mae": 1.6993270735036647
+  },
+  "elapsed_sec": 720.0
+}

@@ -1,0 +1,27 @@
+Subject: Re: JURI-00032-2025 — Revised Manuscript Submission
+
+Dear Dr. Bhat,
+
+Thank you for the constructive feedback on our manuscript "XGBoost-Based Prediction of pKa Values from Molecular Descriptors" (JURI-00032-2025). Please find the revised manuscript attached (XGBoost_pKa_Prediction_REVISION_FINAL.docx).
+
+We have addressed all the points raised in your review:
+
+1. Text and formatting: All tracked changes have been accepted and inline comments resolved. The revised tone, citation style, and abbreviation usage now conform to the JURI house style.
+
+2. Figures: All seven figures have been regenerated from the original data at 300 DPI with consistent serif typography and increased font sizes for legibility. Specific fixes include:
+   - Figure 2: Enlarged annotation and axis fonts; added horizontal colourbar label.
+   - Figure 3: Relabeled legend ("Training R²" / "Test R²"), x-axis converted to sentence case, "Best" replaced with "optimal", and the mislabeled "717 features" corrected to "1,135 features" to match Table 1.
+   - Figure 4: Subplot titles updated to "Training set (n = 2293)" and "Test set (n = 765)" with proper spacing around "="; added (a)/(b) panel labels.
+   - Figure 5: Axis labels converted to sentence case.
+   - Figure 6: x-axis label updated to sentence case; spurious "nan" entry removed.
+   - Figure 7: "Residuals" corrected to "Residual" in panel (b); added (a)/(b) panel labels.
+
+3. Front matter: Dr. Mohammed Al-Khater is now listed as the corresponding author, and ORCID iDs for both authors have been added.
+
+4. Plagiarism: The Turnitin similarity index of 13% is well below the 20% threshold; no further changes were required.
+
+Please let me know if any additional revisions are needed.
+
+Best regards,
+Fahad Atwi
+On behalf of the authors

@@ -1,0 +1,17 @@
+{
+  "status": "ready",
+  "checks": {
+    "torch": "available",
+    "chemprop": "available",
+    "torch_geometric": "available"
+  },
+  "cuda": {
+    "available": true,
+    "device_count": 1,
+    "torch_version": "2.6.0+cu124",
+    "device_name": "NVIDIA GeForce RTX 5070",
+    "capability": "sm_120",
+    "warning": "Stable cu124 PyTorch sees this RTX 50 GPU but may not run CUDA kernels for sm_120."
+  },
+  "next": "Run Chemprop/graph smoke tests; use PyTorch nightly cu128/cu129 if sm_120 CUDA kernels fail."
+}

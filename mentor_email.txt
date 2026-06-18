@@ -1,0 +1,18 @@
+Subject: JURI-00032-2025 — Revised manuscript ready for your sign-off
+
+Hi Dr. Al-Khater,
+
+Hope you're doing well. Just wanted to give you a quick update on the JURI revision — I've taken care of everything so you don't need to go through all the editor's comments yourself.
+
+The good news is the editor didn't touch any of the science. All the changes were language and formatting — things like making the tone more formal, fixing citation style to match JURI's format, and cleaning up abbreviations. Nothing in the results, methodology, or conclusions was changed.
+
+For the figures, the editor flagged 6 of them for small issues (font sizes too small, a couple of label typos). I regenerated all 7 from the original data. Main fixes: bumped up font sizes so everything is readable, fixed "Train" to "Training" in Figure 3, corrected a label that mistakenly said "717 features" instead of 1,135, and added (a)/(b) panel labels to Figures 4 and 7.
+
+Plagiarism came back at 13%, well under the 20% threshold, so no issues there.
+
+The revised file is XGBoost_pKa_Prediction_REVISION_FINAL.docx — it's ready to submit. I've already added the ORCID iDs and listed you as corresponding author as required by the journal.
+
+Let me know if you want to take a quick look before I send it off to the editor.
+
+Thanks,
+Fahad

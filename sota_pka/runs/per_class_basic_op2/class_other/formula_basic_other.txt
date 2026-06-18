@@ -1,0 +1,1 @@
+-94.66*(13.13*MinAbsPartialCharge - 2.635)*(0.003729*GATS2c + sqrt(exp(-2.0*(4.424 - 8.211*GATS1s)**2 - 1.993e-5*exp(39.83*MaxAbsPartialCharge))) - 0.08947) + 2.917

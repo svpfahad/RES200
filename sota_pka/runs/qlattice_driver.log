@@ -1,0 +1,20 @@
+
+===== acidic / direct =====
+  -> test R2=0.4479 RMSE=2.5194 k=8 ops=49 (561.5s)
+
+===== acidic / distilled =====
+  -> test R2=0.3498 RMSE=2.7340 k=8 ops=39 (659.8s)
+
+----- acidic / y-randomization -----
+  -> y-rand test R2=0.0018 (expect ~0)
+
+===== basic / direct =====
+  -> test R2=0.4697 RMSE=2.3651 k=12 ops=44 (575.9s)
+
+===== basic / distilled =====
+  -> test R2=0.3306 RMSE=2.6574 k=8 ops=30 (620.7s)
+
+----- basic / y-randomization -----
+  -> y-rand test R2=0.0073 (expect ~0)
+
+Wrote combined summary + benchmark rows to /Users/fahad/Downloads/RES200/sota_pka/runs

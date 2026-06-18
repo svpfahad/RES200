@@ -1,0 +1,18 @@
+{
+  "best_model": "xgboost",
+  "metrics": {
+    "r2": 0.4606217011167698,
+    "mae": 0.3011570325707085,
+    "rmse": 0.3643581423262493
+  },
+  "calibration_qhat": 1.562424441818632,
+  "target": "ln_co2_solubility_exp",
+  "group": "solvent_id",
+  "features": [
+    "ln_pressure_mpa",
+    "temperature_k",
+    "f02_c_c",
+    "nbo_anion",
+    "pressure_mpa"
+  ]
+}

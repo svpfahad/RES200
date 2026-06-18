@@ -1,0 +1,1 @@
+16.27 - 2.472*exp(4.062*rc_q_r1_max + exp(-2.0*(0.427*rc_n_ionizable_sites - 2.041)**2 - 2.0*(-4.542*rc_decay_q + 4.713*rc_q_r1_max - 0.1626)**2))

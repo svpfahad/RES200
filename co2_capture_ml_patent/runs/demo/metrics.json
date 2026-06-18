@@ -1,0 +1,21 @@
+{
+  "best_model": "ridge",
+  "metrics": {
+    "r2": 0.9724260593937382,
+    "mae": 0.013638145177656939,
+    "rmse": 0.01567093746097041
+  },
+  "calibration_qhat": 0.053029246796376606,
+  "target": "co2_solubility_mol_frac",
+  "group": "solvent_id",
+  "features": [
+    "cation",
+    "anion",
+    "cation_family",
+    "anion_family",
+    "temperature_K",
+    "pressure_bar",
+    "molar_mass_proxy",
+    "polarity_proxy"
+  ]
+}

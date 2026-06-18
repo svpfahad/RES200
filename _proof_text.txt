@@ -1,0 +1,1390 @@
+
+===== PAGE 1 =====
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+Diamond Open Access
+!
+Article
+Chemical Engineering
+XGBoost-Based Prediction of pKa Values from Molecular Descriptors
+Fahad Ali Atwi and Mohammed Al-Khater*
+Cite
+https://doi.org/!".#$%&’/juri/((!#$(
+Submitted: May !", #$#% Revised: March !&, #$#’ Accepted: April $&, #$#’
+ABSTRACT
+The acid dissociation constant (pKa) is a fundamental physicochemical property that governs molecular ionization, solubility,
+and bioavailability, rendering its accurate prediction essential in drug design and environmental toxicology. This study entailed
+a systematic comparison of molecular descriptor representations for pKa prediction using eXtreme Gradient Boosting (XGBoost)
+regression. Four descriptor categories were evaluated: Morgan circular ﬁngerprints, known as extended-connectivity ﬁngerprints
+(ECFP), with varying radii (one to four) and bit lengths (12–16,384), Molecular ACCess System (MACCS) structural keys,
+physicochemical descriptors (molecular weight, logP, rotatable bond count, and fragment counts), and combined representations.
+A comprehensive grid search optimized the XGBoost hyperparameters across all conﬁgurations using ﬁve-fold cross-validation on
+a curated dataset of 7,912 compounds with experimental pKa values obtained from DataWarrior. Morgan ﬁngerprints with radius
+two and 16,384 bits achieved the highest standalone performance (test R2 = 0.795, root mean squared error, RMSE = 1.539),
+whereas combining Morgan ﬁngerprints (radius one, 2,048 bits) with MACCS keys and physicochemical descriptors yielded the
+optimal overall result (test R2 = 0.817; RMSE = 1.455). An extended analysis employing 1,135 Mordred and RDKit cheminfor-
+matic descriptors with XGBoost feature selection further improved the prediction accuracy (test R2 = 0.829; RMSE = 1.404).
+Moreover, feature importance analysis identiﬁed the number of acidic groups, spectral descriptors, and aromatic amine fragments
+as the most inﬂuential predictors. These results demonstrate that multisource descriptor fusion consistently outperforms individual
+representations and that XGBoost provides a computationally efﬁcient and interpretable framework for pKa modeling.
+Keywords: pKa prediction, XGBoost, molecular fingerprints, Morgan fingerprints, MACCS keys, QSAR, molecular descriptors
+!. INTRODUCTION
+The acid dissociation constant (pKa) quantiﬁes the tendency of a
+molecule to donate a proton in an aqueous solution and is one of
+the most critical physicochemical properties in medicinal chem-
+istry, environmental science, and chemical engineering1. Because
+pKa governs the molecular charge state at physiological pH,
+it directly inﬂuences drug absorption, distribution, metabolism,
+excretion, and toxicity (ADMET) proﬁles. Therefore, accurate
+pKa values are indispensable for lead optimization in pharmaceu-
+tical development and for predicting the environmental fate of
+organic pollutants.
+The experimental determination of pKa via potentiomet-
+ric titration or spectrophotometric methods, although reliable,
+is time-consuming and resource-intensive, particularly for the
+screening of large compound libraries. Consequently, compu-
+tational approaches to pKa prediction have attracted sustained
+research interest over the past few decades. Empirical meth-
+ods based on linear free-energy relationships represent some
+of the earliest pKa-prediction strategies; however, their appli-
+cability is often restricted to structurally similar compound
+series2. Alternatively, quantum-mechanical approaches, includ-
+ing density functional theory (DFT) combined with continuum
+solvation models, offer higher accuracy; however, they remain
+computationally prohibitive for large-scale virtual screening3,4.
+More recently, machine learning (ML) methods have
+emerged as attractive compromises between accuracy and com-
+putational cost. For instance, quantitative structure–activity
+relationship (QSAR) models trained on molecular descriptors
+or ﬁngerprints can rapidly predict pKa values of thousands of
+compounds following the establishment of a robust training
+set1,5. Among available ML algorithms, gradient boosting meth-
+ods, particularly eXtreme Gradient Boosting (XGBoost), have
+demonstrated competitive performance across diverse molecu-
+lar property prediction tasks6,7. XGBoost employs regularized
+gradient boosting of decision trees, incorporating L1 and L2
+regularization terms, which mitigate overﬁtting while maintain-
+ing predictive power, thereby making the method particularly
+well-suited for high-dimensional descriptor spaces common in
+cheminformatics6.
+Previous studies have reported that the choice of molecu-
+lar representation profoundly affects QSAR model performance.
+For instance, binary ﬁngerprints, such as Morgan (extended-
+connectivity) ﬁngerprints8 and Molecular ACCess System
+(MACCS) structural keys9, encode substructural information
+as ﬁxed-length bit vectors and have been widely employed in
+https://juri.kfupm.edu.sa
+JURI ((() (("(#) !→)
+Published under an exclusive license by KFUPM
+
+===== PAGE 2 =====
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+Journal of Undergraduate Research International
+#
+similarity searching and property prediction. Additionally, con-
+tinuous physicochemical descriptors computed from molecular
+graphs (e.g., molecular weight, polar surface area, and partition
+coefﬁcients) capture complementary global properties. More
+recently, comprehensive descriptor calculators such as Mor-
+dred10 and PaDEL have enabled the generation of thousands
+of descriptors per molecule, raising questions regarding opti-
+mal feature-selection strategies. Nevertheless, despite the wide
+range of descriptor options, systematic comparisons of represen-
+tation types for pKa prediction using modern gradient-boosting
+frameworks remain limited.
+As one example, Mansouri et al.1 established an important
+benchmark by developing open-source pKa prediction models
+using support vector machines, XGBoost, and deep neural net-
+works on a curated dataset of 7,912 compounds from DataWar-
+rior11. These models achieved root mean squared error (RMSE)
+values of approximately 1.5 pKa units on external test sets, com-
+parable to those of commercial software packages. Additionally,
+Yang et al.12 applied XGBoost with structural and physical-
+organic parameter-based (SPOC) descriptors for pKa predic-
+tion across 39 solvents, achieving a mean absolute error (MAE)
+of 0.87 pKa units. Furthermore, graph-based neural network
+approaches, such as MolGpKa13 have also shown promise for
+pKa prediction. However, the relative contributions of different
+descriptor types (ﬁngerprints versus continuous descriptors, as
+well as their combinations) to the XGBoost-based pKa models
+have not yet been comprehensively evaluated.
+The present study addresses this gap by systematically com-
+paring four molecular descriptor categories for pKa prediction
+using XGBoost regression: (i) Morgan circular ﬁngerprints with
+varying radii and bit lengths, (ii) MACCS structural keys, (iii)
+a set of physicochemical descriptors and fragment counts, and
+(iv) combined multisource descriptor vectors. A grid search of
+the XGBoost hyperparameters with ﬁve-fold cross-validation was
+performed for each conﬁguration. Furthermore, an extended
+analysis employing 1,135 Mordred and RDKit descriptors was
+conducted to assess the potential of a high-dimensional descrip-
+tor space. The key objectives of this work are to determine the
+descriptor representation that yields the most accurate pKa pre-
+diction, quantify the beneﬁt of descriptor fusion, and identify
+the most informative molecular features using XGBoost feature-
+importance analysis.
+(. METHODOLOGY
+(.!. Dataset.
+The experimental pKa values for 7,912
+organic compounds were obtained from the DataWarrior soft-
+ware package11, which aggregates data from multiple public
+repositories. This dataset, originally curated by Mansouri et
+al.1, includes the strongest acidic pKa for each compound mea-
+sured in aqueous solution at 25 °C. The chemical structures
+were represented as Simpliﬁed Molecular Input Line Entry Sys-
+tem (SMILES) strings. Prior to descriptor computation, salt
+forms were removed using a custom salt-removal protocol based
+on the RDKit SaltRemover module14 with a curated salt def-
+inition ﬁle. Molecules that could not be parsed by RDKit or
+that yielded invalid molecular objects after salt removal were
+excluded, yielding the ﬁnal working dataset. For the ﬁngerprint
+comparisonexperiments(Sections2.2–2.5),thisdatasetwassplit
+into 75% training and 25% test sets using a random partition
+(random_state = 11) to ensure reproducibility.
+(.(. Morgan Circular Fingerprints.
+Morgan ﬁnger-
+prints, also known as ECFPs8, were generated using the RDKit
+library14. Each ﬁngerprint encodes a substructural environment
+around every atom up to a speciﬁed radius and is hashed into a
+ﬁxed-length bit vector. To evaluate the effect of the ﬁngerprint
+parameters on predictive performance, a comprehensive grid was
+constructed over four radii (one, two, three, and four) and ten
+bit lengths (12, 64, 128, 256, 512, 1,024, 2,048, 4,096, 8,192, and
+16,384), yielding 40 distinct ﬁngerprint conﬁgurations.
+(.*. MACCS Structural Keys. MACCS keys9 are a set of
+166 predeﬁned binary structural keys that indicate the presence
+or absence of speciﬁc substructural patterns (e.g., aromatic rings,
+functional groups, and ring sizes). Unlike Morgan ﬁngerprints,
+MACCS keys do not require parameter tuning as the key deﬁni-
+tions are ﬁxed. MACCS ﬁngerprints were generated for all valid
+molecules using the RDKit MACCSKey module14.
+(.$. PhysicochemicalDescriptors. Asetofﬁvecontinu-
+ous molecular descriptors and fragment counts was computed for
+each molecule using RDKit14: molecular weight (MolWt), cal-
+culated octanol–water partition coefﬁcient (MolLogP), number
+of rotatable bonds (NumRotatableBonds), number of aliphatic
+hydroxyl groups (fr_Al_OH), and number of aromatic nitrogen
+atoms (fr_Ar_N). These descriptors were selected to capture
+fundamental size, lipophilicity, ﬂexibility, and functional group
+properties relevant to acid–base equilibria.
+(.%. Combined Descriptor Vectors. For each of the 40
+Morgan ﬁngerprint conﬁgurations, a combined feature vector
+was constructed by concatenating the Morgan ﬁngerprint with
+a 166-bit MACCS key vector and ﬁve continuous descriptors,
+resulting in a total dimensionality of (Morgan size + 171). This
+experimental design allowed the assessment of whether multi-
+source descriptor fusion improved pKa prediction relative to
+individual descriptor types.
+(.#. Extended Descriptor Analysis. In a separate analy-
+sis, a comprehensive set of molecular descriptors was computed
+for an independent subset of the data (Opt2 acidic partition:
+Figure 1. Effect of Morgan ﬁngerprint bit length on the test R2 value for
+radii 1–4
+https://doi.org/!".#$%&’/juri/((!#$(
+JURI ((() (("(#) (→)
+
+===== PAGE 3 =====
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+Journal of Undergraduate Research International
+(
+Figure 2. Heatmap of the Morgan ﬁngerprint test R2 values across all radius and bit-length combinations. Darker shading reﬂects superior performance
+Figure 3. Comparison of the training and test R2 values across descriptor categories
+2,293 training compounds and 765 test compounds with prede-
+ﬁned splits from DataWarrior). Three descriptor families were
+calculated: (i) all 210 RDKit two-dimensional (2D) descrip-
+tors14, (ii) 85 RDKit fragment counts (fr_* functions), and (iii)
+approximately 1,800 Mordred of 2D descriptors10. After removal
+of zero-variance columns, conversion of all values to numeric for-
+mat, and removal of rows with missing values, the ﬁnal descriptor
+matrix contained 1,135 features. This high-dimensional repre-
+sentation was used to train an XGBoost model with the same
+hyperparameters described in Section 2.7, and to extract feature
+importance for chemical interpretation.
+Table 1. Performance comparison of XGBoost models across descriptor categories
+Descriptor type
+Features
+Training R²
+Test R²
+MAE
+RMSE
+Continuous descriptors
+5
+0.850
+0.159
+2.385
+3.117
+MACCS keys
+166
+0.977
+0.780
+1.056
+1.596
+Morgan FP (optimal)
+16384
+0.961
+0.795
+1.040
+1.539
+Combined (optimal)
+2219
+0.995
+0.817
+0.913
+1.454
+Full descriptors
+1,135
+0.9998
+0.829
+0.887
+1.404
+https://doi.org/!".#$%&’/juri/((!#$(
+JURI ((() (("(#) *→)
+
+===== PAGE 4 =====
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+Journal of Undergraduate Research International
+&
+Figure 4. Predicted versus experimental pKa values for the full-descriptor XGBoost model. (a) Training set (n = 2293). (b) Test set (n = 765). The
+dashed line represents perfect prediction
+(.). XGBoost Model Training and Evaluation.
+All
+models were trained using XGBoost6 with a squared-error
+regression objective (squarederror). For ﬁngerprint comparison
+experiments, hyperparameter optimization was performed via an
+exhaustive grid search with ﬁve-fold cross-validation using Grid-
+SearchCV15. The search space included n_estimators = {300},
+max_depth = {3, 6}, learning_rate = {0.1, 0.2}, subsample =
+{0.8}, colsample_bytree = {0.8, 1.0}, and reg_lambda = {1, 5}.
+The optimal model determined by cross-validation was evaluated
+using the held-out test set. For the extended descriptor analy-
+sis, ﬁxed hyperparameters were employed (n_estimators = 300,
+max_depth = 6, learning_rate = 0.1, subsample = 0.8, colsam-
+ple_bytree = 0.8, and reg_lambda = 1), following published
+guidelines for gradient boosting in QSAR7. Model performance
+was assessed using the coefﬁcient of determination (R2), RMSE,
+and MAE for both the training and test sets. Feature impor-
+tance was extracted from the trained XGBoost model using a
+gain-based importance metric.
+Figure5. Overﬁtting gap (training R2→test R2) for Morgan ﬁngerprint
+models as a function of bit length and radius
+*. RESULTS AND DISCUSSION
+*.!. Effect of Morgan Fingerprint Parameters.
+The
+predictive performance of the Morgan ﬁngerprints varied sub-
+stantially with both radius and bit length. Figure 1 illustrates the
+relationship between the ﬁngerprint bit length and R2 for each
+radius. At the smallest bit length tested (12 bits), all radii yielded
+poor model performance (test R2 <0.20), reﬂecting severe infor-
+mation loss due to hash collisions. Performance increased mono-
+tonically with bit length up to approximately 2,048–4,096 bits,
+beyond which the gain plateaued. Radius 2 consistently out-
+performed the other radii at higher bit lengths, achieving supe-
+rior individual Morgan ﬁngerprint results: test R2 = 0.795 and
+RMSE = 1.539 at 16,384 bits. This ﬁnding is consistent with the
+observation that ECFP4 (radius 2) captures a balance between
+local atomic environments and broader substructural context8.
+Figure2presentsaheatmapofthetestR2 valuesacrossthefull-
+radius-bit-length grid. A clear pattern emerged: radii 1 and 2 gen-
+erally outperformed radii 3 and 4 at equivalent bit lengths. This
+can be attributed to the fact that larger radii encode increasingly
+speciﬁc substructural environments, which may introduce noise
+andreducegeneralizabilitywhenthetrainingsetdoesnotcontain
+sufﬁcient structural diversity. Additionally, extremely small bit
+lengths (12–64 bits) were found to be consistently inadequate,
+regardless of radius, conﬁrming that ﬁngerprint dimensionality
+represents a critical design parameter.
+*.(. Comparison Across Descriptor Types.
+Table 1
+summarizes the best-performing models for each descriptor cat-
+egory. Use of the ﬁve continuous physicochemical descriptors
+aloneyieldedalowR2 valueof0.159(RMSE=3.117),indicating
+that this minimal feature set was insufﬁcient for pKa prediction
+across a structurally diverse compound library. This result under-
+scores the importance of substructural information for capturing
+the electronic and steric factors that govern the acid–base equi-
+libria. MACCS keys (166 bits) produced a signiﬁcantly superior
+R2 of 0.780 (RMSE = 1.596), demonstrating the utility of pre-
+deﬁned structural keys despite their modest dimensionality. The
+https://doi.org/!".#$%&’/juri/((!#$(
+JURI ((() (("(#) $→)
+
+===== PAGE 5 =====
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562
+563
+564
+565
+566
+567
+568
+569
+570
+571
+572
+573
+574
+575
+576
+577
+578
+579
+580
+581
+582
+583
+584
+585
+586
+587
+588
+589
+590
+Journal of Undergraduate Research International
+%
+Figure 6. Top 20 features ranked by importance (gain metric) identiﬁed by the full-descriptor XGBoost model
+optimal Morgan ﬁngerprint conﬁguration (radius two, 16,384
+bits) slightly outperformed MACCS, with a test R2 of 0.795,
+which can be attributed to its data-driven encoding of circular
+substructures rather than the ﬁxed key set8,9.
+As detailed in the table, the combined descriptor vectors con-
+sistently outperformed the individual components. The optimal
+combined conﬁguration (Morgan radius 1, 2,048 bits + MACCS
++ continuous descriptors) achieved a test R2 of 0.817 (RMSE
+= 1.454), representing a 2.8% improvement over the optimal
+individual Morgan ﬁngerprints. This result corroborates previous
+ﬁndings that heterogeneous descriptor fusion can capture com-
+plementary structural information5,7. Figure 3 presents a visual
+comparison of the training and test R2 values across all ﬁve model
+categories.
+*.*. Predicted Versus Experimental pKa.
+Figure 4
+presents scatter plots of the predicted versus experimental pKa
+valuesobtainedusingthefull-descriptorXGBoostmodelforboth
+the training and test sets. The training set (n = 2293) exhibited a
+near-perfect ﬁt (R2 = 0.9998, RMSE = 0.047), whereas the test
+set (n = 765) showed good generalization (R2 = 0.829, RMSE
+= 1.404). The scatter around the diagonal identity line remained
+relatively uniform across the pKa range of →3 to 14, suggest-
+ing that the model does not exhibit systematic bias toward any
+particular pKa region.
+*.$. Overfitting Analysis.
+The gap between the train-
+ing and test R2 values was used as an indicator of overﬁtting.
+Figure 5 plots this gap for the Morgan ﬁngerprint models across
+all radii and bit lengths. Models with max_depth = 6 exhib-
+ited larger train–test gaps (up to 0.20 R²units) than those with
+max_depth = 3, consistent with the known tendency of deeper
+trees to memorize trainingdata6.Nevertheless, theregularization
+provided by XGBoost (L2 penalty via reg_lambda) prevented
+catastrophic overﬁtting, even at high dimensionalities. The full-
+descriptor model showed the largest absolute training–test gap
+(trainingR2 = 0.9998vs. testR2 = 0.829),suggesting thatsome
+degree of overﬁtting was inevitable with 1,135 features and 2,293
+training samples. Future studies should therefore explore addi-
+tionalregularizationstrategies(e.g.,featureselectionorensemble
+averaging) to narrow this gap.
+*.%. Feature Importance Analysis. The feature impor-
+tance extracted from the full-descriptor XGBoost model pro-
+vided chemical insights into the structural drivers of pKa varia-
+tion (Figure 6). The most important feature was nAcid (impor-
+tance = 0.176), which is a Mordred descriptor that counts the
+number of acidic functional groups in the molecule. This is chem-
+ically intuitive because the presence and number of acidic groups
+directly determine the pKa landscape. The second-ranked fea-
+ture, SpAbs_Dzpe (importance = 0.049), is a spectral descriptor
+related to Barysz-weighted electronegativity that captures elec-
+tronic distribution patterns. The third most important feature,
+fr_Ar_NH (importance = 0.029), reﬂects the inﬂuence of aro-
+matic amine groups, which are well-known weak acids.
+Other highly ranked features included nHBAcc (hydrogen-
+bond acceptor count, importance = 0.022), fr_phenol (phenolic
+hydroxyl groups, importance = 0.019), and MaxPartialCharge
+(importance = 0.015). This feature-importance proﬁle is con-
+sistent with chemical theory: molecular acidity is primarily gov-
+erned by the presence of ionizable functional groups, the elec-
+tronic environment around those groups (i.e., partial charges and
+electronegativity), and intramolecular hydrogen bonding2. The
+top ten features identiﬁed in this work are listed in Table 2.
+https://doi.org/!".#$%&’/juri/((!#$(
+JURI ((() (("(#) %→)
+
+===== PAGE 6 =====
+591
+592
+593
+594
+595
+596
+597
+598
+599
+600
+601
+602
+603
+604
+605
+606
+607
+608
+609
+610
+611
+612
+613
+614
+615
+616
+617
+618
+619
+620
+621
+622
+623
+624
+625
+626
+627
+628
+629
+630
+631
+632
+633
+634
+635
+636
+637
+638
+639
+640
+641
+642
+643
+644
+645
+646
+647
+648
+649
+650
+651
+652
+653
+654
+655
+656
+657
+658
+659
+660
+661
+662
+663
+664
+665
+666
+667
+668
+669
+670
+671
+672
+673
+674
+675
+676
+677
+678
+679
+680
+681
+682
+683
+684
+685
+686
+687
+688
+689
+690
+691
+692
+693
+694
+695
+696
+697
+698
+699
+700
+701
+702
+703
+704
+705
+706
+707
+708
+Journal of Undergraduate Research International
+’
+Table 2. Top ten molecular descriptors ranked by XGBoost feature importance (gain metric)
+Rank
+Descriptor
+Importance
+Description
+1
+nAcid
+0.176
+Number of acidic groups
+2
+SpAbs_Dzpe
+0.049
+Spectral Barysz electronegativity
+3
+fr_Ar_NH
+0.029
+Aromatic amine count
+4
+nHBAcc
+0.022
+H-bond acceptor count
+5
+SpDiam_Dzp
+0.019
+Spectral Barysz polarizability
+6
+fr_phenol
+0.019
+Phenol group count
+7
+SpMAD_Dzse
+0.016
+Spectral distance descriptor
+8
+MaxPartialCharge
+0.015
+Maximum partial charge
+9
+AATS0dv
+0.015
+Moreau–Broto autocorrelation
+10
+AATSC0p
+0.014
+Centered Moreau–Broto polarizability
+*.#. Residual Analysis. Figure 7 shows the residual dis-
+tribution and the residual-versus-predicted plot for the full-
+descriptor model on the test set. The residual histogram is
+approximately symmetric about zero, with a slight positive
+skew. The majority of predictions (>80%) fall within ±2 pKa
+units of the experimental value. Additionally, the residual-
+versus-predicted plot shows no pronounced systematic pattern,
+although larger absolute residuals were observed at extreme pKa
+values (i.e., below →1 and above 12), where the training-data
+density is lower. These observations indicate that the prediction
+errors of the model are predominantly random rather than sys-
+tematic and suggest that the performance could be improved by
+augmenting the training set in these extreme pKa ranges.
+*.). Comparison with the Literature.
+The results of
+this study are consistent with the ﬁndings of Mansouri et al.1,
+who reported RMSE values of approximately 1.5 pKa units for
+XGBoost models trained on the same DataWarrior dataset. The
+present combined ﬁngerprint model (RMSE = 1.454) and full-
+descriptor model (RMSE = 1.404) both fall within this range.
+Although Yang et al.12 achieved a lower MAE of 0.87 pKa
+units using solvent-speciﬁc SPOC descriptors, their study was
+restricted to a smaller, more homogeneous dataset. Additionally,
+Sanchez et al.4 achieved high prediction accuracy by combining
+DFT-computed features with molecular fragmentation descrip-
+tors, albeit at a substantially higher computational cost than
+the purely descriptor-based approach presented herein. These
+results demonstrate that purely 2D descriptor-based XGBoost
+models provide a favorable balance between accuracy, inter-
+pretability, and computational efﬁciency for large-scale pKa
+predictions.
+$. CONCLUSIONS
+This study systematically evaluated the performance of four
+molecular descriptor categories for pKa prediction using
+XGBoost regression on a curated dataset of 7,912 compounds.
+It was revealed that Morgan circular ﬁngerprints at radius
+2 with 16,384 bits achieved the optimal standalone ﬁngerprint
+performance (test R2 = 0.795, RMSE = 1.539), whereas bit
+lengths below 128 were insufﬁcient for accurate prediction,
+regardless of radius. The MACCS structural keys (166 bits)
+provided competitive performance (test R2 = 0.780) relative
+to their low dimensionality. However, the use of continuous
+physicochemical descriptors alone resulted in poor predictability
+(R2 = 0.159), conﬁrming the requirement for substructural
+Figure 7. Residual analysis of the full-descriptor XGBoost model on the test set. (a) Residual histogram. (b) Residuals versus predicted pKa values
+https://doi.org/!".#$%&’/juri/((!#$(
+JURI ((() (("(#) #→)
+
+===== PAGE 7 =====
+709
+710
+711
+712
+713
+714
+715
+716
+717
+718
+719
+720
+721
+722
+723
+724
+725
+726
+727
+728
+729
+730
+731
+732
+733
+734
+735
+736
+737
+738
+739
+740
+741
+742
+743
+744
+745
+746
+747
+748
+749
+750
+751
+752
+753
+754
+755
+756
+757
+758
+759
+760
+761
+762
+763
+764
+765
+766
+767
+768
+769
+770
+771
+772
+773
+774
+775
+776
+777
+778
+779
+780
+781
+782
+783
+784
+785
+786
+787
+788
+789
+790
+791
+792
+793
+794
+795
+796
+797
+798
+799
+800
+801
+802
+803
+804
+805
+806
+807
+808
+809
+810
+811
+812
+813
+814
+815
+816
+817
+818
+819
+820
+821
+822
+823
+824
+825
+826
+Journal of Undergraduate Research International
+)
+information. Notably, a combination of Morgan ﬁngerprints,
+MACCS keys, and physicochemical descriptors consistently
+outperformed the individual representations, with the optimal
+combined model achieving R2 = 0.817 (RMSE = 1.454). An
+extendedanalysiswith1,135MordredandRDKitdescriptorsfur-
+ther improved the prediction accuracy to R2 = 0.829 (RMSE =
+1.404). Furthermore, feature importance analysis revealed that
+the acidic group count, spectral electronegativity descriptors,
+and aromatic amine fragments were the most inﬂuential predic-
+tors, consistent with established chemical theory of acid–base
+equilibria.
+These ﬁndings demonstrate that descriptor fusion is a sim-
+ple yet effective strategy for improving pKa prediction accu-
+racy and that XGBoost offers a computationally efﬁcient and
+interpretable framework suitable for large-scale virtual screening.
+Future studies should explore the application of these models
+to external validation sets, the integration of three-dimensional
+molecular descriptors, and comparisons with graph neural net-
+work approaches to further advance the ﬁeld.
+AFFILIATIONS AND AUTHOR DETAILS
+Undergraduate Author
+Fahad Ali Atwi – Department of Chemical Engineering, King
+Fahd University of Petroleum & Minerals, Dhahran 31261,
+Saudi Arabia;
+0009-0003-7015-9092
+Email: s202283300@kfupm.edu.sa
+Corresponding Author
+Mohammed Al-Khater – Research Mentor, Professor, Depart-
+ment of Chemical Engineering, King Fahd University of
+Petroleum & Minerals, Dhahran 31261, Saudi Arabia;
+0000-0003-0926-4056
+Email: mfkhater@kfupm.edu.sa;
+– Research Mentor, Researcher, Interdisciplinary Research Cen-
+ter for Reﬁning & Advanced Chemicals, King Fahd University
+of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia;
+ACKNOWLEDGEMENTS
+The authors acknowledge the support provided by the King Fahd
+University of Petroleum and Minerals, Dhahran, Saudi Arabia.
+The authors also acknowledge the developers of the open-source
+software packages used in this study, including RDKit, Mordred,
+XGBoost, Scikit-learn, and DataWarrior.
+REFERENCES
+(1) Mansouri, K. et al. Open-source QSAR models for pKa predic-
+tion using multiple machine learning approaches. J. Cheminform. 11, 60
+(2019).
+(2) Göller, A. H. The art of atom descriptor design. Drug Discov.
+Today Technol. 32–33, 37–43 (2020).
+(3) Lawler,
+R.
+et
+al.
+DFT–Machine
+learning
+approach
+for
+accurate prediction of pKa. J. Phys. Chem. A 125, 8712–8722
+(2021).
+(4) Sanchez, A. J., Maier, S. & Raghavachari, K. Leveraging DFT and
+molecular fragmentation for chemically accurate pKa prediction using
+machine learning. J. Chem. Inf. Model. 64, 712–723 (2024).
+(5) Tropsha, A. Best practices for QSAR model development, valida-
+tion, and exploitation. Mol. Inform. 29, 476–488 (2010).
+(6) Chen, T. & Guestrin, C. XGBoost: A scalable tree boosting sys-
+tem. Proc. 22nd ACM SIGKDD Int. Conf. Knowl. Discov. Data Min.
+785–794 (2016).
+(7) Boldini, D. et al. Practical guidelines for the use of gradient
+boosting for molecular property prediction. J. Cheminform. 15, 73
+(2023).
+(8) Rogers, D. & Hahn, M. Extended-connectivity ﬁngerprints. J.
+Chem. Inf. Model. 50, 742–754 (2010).
+(9) Durant, J. L., Leland, B. A., Henry, D. R. & Nourse, J. G. Reopti-
+mization of MDL keys for use in drug discovery. J. Chem. Inf. Comput.
+Sci. 42, 1273–1280 (2002).
+(10) Moriwaki, H., Tian, Y.-S., Kawashita, N. & Takagi, T. Mordred:
+a molecular descriptor calculator. J. Cheminform. 10, 4 (2018).
+(11) Sander, T., Freyss, J., von Korff, M. & Rufener, C. DataWar-
+rior: an open-source program for chemistry aware data visualization and
+analysis. J. Chem. Inf. Model. 55, 460–473 (2015).
+(12) Yang, Q. et al. Holistic prediction of the pKa in diverse sol-
+vents based on a machine-learning approach. Angew. Chem. Int. Ed. 59,
+19282–19291 (2020).
+(13) Pan, S. et al. MolGpKa: a web server for molecular pKa predic-
+tion using a graph-convolutional neural network. J. Chem. Inf. Model.
+61, 3159–3165 (2021).
+(14) Landrum, G. RDKit: Open-source cheminformatics. https://
+www.rdkit.org (2024).
+(15) Pedregosa, F. et al. Scikit-learn: machine learning in Python. J.
+Mach. Learn. Res. 12, 2825–2830 (2011).
+https://doi.org/!".#$%&’/juri/((!#$(
+JURI ((() (("(#) )→)

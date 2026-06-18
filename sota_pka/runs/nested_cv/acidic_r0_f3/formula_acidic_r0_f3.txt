@@ -1,0 +1,1 @@
+8.708*(1.518*MaxAbsPartialCharge - 3.349*MinAbsPartialCharge + 0.1828*BCUT2D_MRLOW - 0.1094)*exp(-2.0*(0.0189*PEOE_VSA13 + (13.98*MinAbsPartialCharge - 2.369)*(0.2682*GATS1s + exp(-2.0*(5.9*MaxAbsPartialCharge - 3.275)**2 - 2.0*(2.077*GATS1s - 1.735)**2) - 0.6225) - 0.4358)**2) + 8.283

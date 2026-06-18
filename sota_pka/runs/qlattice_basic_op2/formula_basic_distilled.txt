@@ -1,0 +1,1 @@
+-5.544*MinPartialCharge + 3.901*exp(-2.0*(4.798*MinPartialCharge + 1.532)**2*(2.317*BCUT2D_MRLOW + tanh(1.985*BCUTc-1h - 0.6739) + 0.4776)**2 - 2.0*(-0.2977*GATS1s + (11.13 - 0.7894*BCUTi-1h)*(-6.753*BCUTc-1h - 0.02524) + 0.01213)**2) + 3.147
